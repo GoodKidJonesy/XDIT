@@ -1,0 +1,7 @@
+{
+  "name": "XDIT",
+  "short_name": "XDIT",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
