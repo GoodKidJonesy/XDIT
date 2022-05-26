@@ -1,4 +1,5 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
+/*The main css that every page will use on top of their specific css*/
 body {
     background-color: beige;
 }

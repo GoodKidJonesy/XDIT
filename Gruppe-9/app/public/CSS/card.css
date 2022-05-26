@@ -1,0 +1,17 @@
+/*for all*/
+
+
+@media (max-width: 600) {
+    /*mobile*/
+
+}
+
+@media (min-width: 601) and (max-width: 999) {
+    /*tablet*/
+
+}
+
+@media (min-width: 1000) {
+    /*pc*/
+
+}
