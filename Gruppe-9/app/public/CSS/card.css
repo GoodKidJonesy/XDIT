@@ -1,17 +1,13 @@
 /*for all*/
-
-
 @media (max-width: 600) {
-    /*mobile*/
-
+  /*mobile*/
 }
 
 @media (min-width: 601) and (max-width: 999) {
-    /*tablet*/
-
+  /*tablet*/
 }
 
 @media (min-width: 1000) {
-    /*pc*/
-
+  /*pc*/
 }
+/*# sourceMappingURL=card.css.map */
