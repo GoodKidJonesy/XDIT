@@ -1,7 +1,7 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
 /*The main css that every page will use on top of their specific css*/
 :root {
-    --light: #E8E8FF; /*primary color*/
+    --light: #FFFFEE; /*primary color*/
     --dark: #222222; /*secondary color*/
     --green: #00CC00; /*tertiary color*/
 }
