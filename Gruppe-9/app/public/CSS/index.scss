@@ -13,9 +13,6 @@ button {
     padding: 30px;
 }
 
-#help {
-    margin-top: 30px;
-}
 @media (max-width: 600px) {
     h2 {
         font-size: small;
@@ -23,9 +20,6 @@ button {
     button {
         width: 80%;
         font-size: x-large;
-    }
-    #help {
-        width: 40%;
     }
 }
 
@@ -37,9 +31,6 @@ button {
         width: 50%;
         font-size: x-large;
     }
-    #help {
-        width: 25%;
-    }
 }
 
 @media (min-width: 1000px) {
@@ -49,8 +40,5 @@ button {
     button {
         width: 40%;
         font-size: xx-large;
-    }
-    #help {
-        width: 20%;
     }
 }
