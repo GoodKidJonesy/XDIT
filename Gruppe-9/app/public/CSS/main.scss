@@ -1,0 +1,16 @@
+:root {
+    --light: #c0e3ff; /*primary*/
+    --white: #FFFFFF; /*secondary*/
+}
+body {
+    background-color: var(--light);
+}
+button {
+    background-color: var(--white);
+}
+button:hover {
+    cursor: pointer;
+}
+image {
+    max-width: 100%;
+}

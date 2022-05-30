@@ -1,13 +1,60 @@
 /*for all*/
-@media (max-width: 600px) {
-  /*mobile*/
+body {
+  text-align: center;
 }
 
-@media (min-width: 601px) and (max-width: 999px) {
-  /*tablet*/
+#buttons {
+  margin-top: 200px;
+  display: block;
+  width: 100%;
+}
+
+button {
+  margin: 15px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+#help {
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: small;
+  }
+  button {
+    width: 80%;
+    font-size: x-large;
+  }
+  #help {
+    width: 40%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  h2 {
+    font-size: small;
+  }
+  button {
+    width: 50%;
+    font-size: x-large;
+  }
+  #help {
+    width: 25%;
+  }
 }
 
 @media (min-width: 1000px) {
-  /*pc*/
+  h2 {
+    font-size: medium;
+  }
+  button {
+    width: 40%;
+    font-size: xx-large;
+  }
+  #help {
+    width: 20%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
