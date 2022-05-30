@@ -1,4 +1,19 @@
 /*for all*/
+#carCarousel {
+    height: 50vh;
+}
+
+.carousel-item .card img {
+    max-height: 20vh;
+}
+.carousel-item {
+    max-height: 50vh;
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.carousel-item.active {
+    /*center also when sliding*/
+    display: flex;
+    justify-content: center;
+}
 
 @media (max-width: 600px) {
     /*mobile*/
