@@ -1,0 +1,5 @@
+function helpInit() {
+
+}
+
+export { helpInit };

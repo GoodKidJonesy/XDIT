@@ -1,20 +1,20 @@
 const path = require('path');
 
 const rootConfig = {
-  mode: 'development',
-  optimization: {
-    usedExports: true, // tells webpack to tree-shake
-  },
-  devtool: 'eval-source-map'
+    mode: 'development',
+    optimization: {
+        usedExports: true, // tells webpack to tree-shake
+    },
+    devtool: 'eval-source-map'
 };
 
 const appConfig = {
-  ...rootConfig,
-  entry: './src/index.js',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'public/scripts'),
-  },
+    ...rootConfig,
+    entry: './src/entry.js',
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'public/scripts'),
+    },
 };
 
 /*const serviceWorkerConfig = {
@@ -37,4 +37,4 @@ const appConfig = {
   },
 };*/
 
-module.exports = [appConfig/*, serviceWorkerConfig*/];
+module.exports = [appConfig /*, serviceWorkerConfig*/ ];

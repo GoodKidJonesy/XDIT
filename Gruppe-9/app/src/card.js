@@ -1,0 +1,5 @@
+function cardInit() {
+
+}
+
+export { cardInit };
