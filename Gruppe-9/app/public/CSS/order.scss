@@ -6,6 +6,16 @@
     .card-header {
         display: inline-block;
     }
+
+    #cardicon {
+        display: inline;
+        text-align: right;
+    }
+
+    #betalingtext {
+        display: inline;
+        text-align: left;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 999px) {

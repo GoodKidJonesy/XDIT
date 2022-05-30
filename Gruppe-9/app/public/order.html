@@ -46,28 +46,57 @@
         <div id="betaling">
             <div class="card" style="width: 25rem;">
                 <div class="card-header">
-                    <i class="material-icons">credit_card</i>
-                    <h3>Betaling</h1>
+                    <i id="cardicon" class="material-icons">credit_card</i>
+                    <h3 id="betalingtext">Betaling</h1>
                   </div>
                 <div class="card-body">
                     
                   <h5 class="card-title"></h5>
                   <h6 class="card-subtitle mb-2 text-muted">Indtast dine kortoplysning</h6>
-                  <form>
+                  
+                  <label>Fornavn</label>  
+                  <input type="text" class="form-control" placeholder="Fornavn">
+                
+                    <form>
                     <div class="form-row">
                       <div class="col">
-                        <label>Fornavn</label>  
-                        <input type="text" class="form-control" placeholder="Fornavn">
-                      </div>
+                        <label>Mellemnavn</label> 
+                        <input type="text" class="form-control" placeholder="Mellemnavn">
+                     
+                        </div>
                       <div class="col">
                         <label>Efternavn</label> 
                         <input type="text" class="form-control" placeholder="Mellemnavn">
                       </div>
                     </div>
-                  </form>
+                    </form>
+                    <label>Email adresse</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
+                    
+                    <label>Adresse</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
 
-                  <h6 class="card-subtitle mb-2 text-muted">Beløb:</h6>  
-                  <p class="card-text">0.00 kr.</p>
+                     
+                    <label>Navn på kort</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
+
+
+                    <label>Kortnummer</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
+
+                    <label>Udløbs-dato</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
+
+                    <label>CVV</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
+                    
+                    <h6 class="card-subtitle mb-2 text-muted">Beløb:</h6>  
+                    <p class="card-text">0.00 kr.</p>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Accepter du købsbetingelserne</label>
+
+                    <button type="button" class="btn btn-primary">Bekræft</button>
+
                 </div>
               </div>
         </div>
