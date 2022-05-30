@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!-- Sanitize CSS -->
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css/forms.css">
 
     <!-- Bootstrap links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Personal links -->
     <link rel="stylesheet" href="CSS/main.css">
@@ -21,7 +23,56 @@
     <title>XDIT - Min side</title>
 </head>
 
+<header>
+    <div id="top">
+        <nav class="navbar bg-primary">
+            <i id="back" class="material-icons md-36" onclick="location.href='index.html'">reply</i>
+            <a class="navbar-brand text-white" href="#"><h1>XD-IT</h1></a>
+            <i id="login" class="material-icons md-36">account_circle</i>
+        </nav>
+       
+    </div>
+</header>
+
 <body class="userpage">
+    <div id="content">
+        <div id="breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Forside</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Aktive Biler</li>
+                </ol>
+            </nav>
+        </div>
+        <div id="minebiler">
+            <div id="minebilertekst">
+                <h1> Mine Biler</h1>
+            </div>
+            <div id="aktivbil">
+                <h3 id="aktivbiltext">Aktiv Bil</h2>
+                <div class="card" style="width: 18rem;">
+                    <h5 class="card-title">XD-IT Bil 1</h5>
+                    <img class="card-img-top" src="images/Car.png" alt="Vores Elektrisk Bil">
+                    <div class="card-body">
+                        <div id="biltype">
+                            <h6 class="card-text">Type:</h6>
+                            <p class="card-text">Elektrisk Bil</p>
+                        </div>
+                        <div id="strøm">
+                            <h6 class="card-text">Strøm:</h6>
+                            <p class="card-text">100%</p>
+                        </div>
+                        <div id="pris">
+                            <p class="card-text">0.00 kr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="afslut">
+                <button type="button" class="button btn btn-primary btn-lg">Afslut og Betal</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 <script src="scripts/main.js"></script>

@@ -1,6 +1,9 @@
 /*for all*/
 @media (max-width: 600px) {
   /*mobile*/
+  .card-header {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 999px) {
