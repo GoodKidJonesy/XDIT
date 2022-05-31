@@ -12,8 +12,8 @@ $clr-light: #D7D9CE;
 body {
     background-color: $clr-background;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
