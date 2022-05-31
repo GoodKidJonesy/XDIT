@@ -36,6 +36,37 @@ body {
     width: 0;
 }
 
+
+#top {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#linkfoot {
+    padding-top: 3rem;
+}
+
+#foottext {
+    margin-top: 1rem;
+}
+
+
+#content {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.material-icon {
+    color: black;
+  }
+
+#footer {
+    margin-top: 1rem;
+}
+
 @media (min-width: 601px) and (max-width: 999px) {
     .page {
         box-shadow: 20px 20px 50px darken($clr-background, 10%);

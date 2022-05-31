@@ -1,4 +1,53 @@
+@charset "UTF-8";
 /*for all*/
+#betaling {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text {
+  text-align: left;
+}
+
+.text2 {
+  text-align: right;
+}
+
+.card-header {
+  display: inline-block;
+}
+
+#cardicon {
+  display: inline;
+  text-align: right;
+}
+
+#betalingtext {
+  display: inline;
+  text-align: left;
+}
+
+#emailaddress {
+  margin-bottom: -0.5rem;
+}
+
+#beløb {
+  margin-top: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+#checkbox {
+  margin-top: 0.7rem;
+}
+
+#bekræft {
+  text-align: right;
+  vertical-align: middle;
+}
+
 @media (max-width: 600px) {
   /*mobile*/
 }
