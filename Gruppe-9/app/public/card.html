@@ -22,8 +22,9 @@
 
     <title>XDIT - Kortoplysninger</title>
 </head>
+
 <header>
-    <div id="top" class="navigationbar">
+    <div id="top boxshadow" class="navigationbar ">
         <nav class="navbar bg-primary">
             <i id="back" class="material-icons md-36" onclick="location.href='index.html'">reply</i>
             <a class="navbar-brand text-black" href="#"><h1>XD-IT</h1></a>
@@ -31,6 +32,8 @@
         </nav>
     </div>
 </header>
+
+
 <body class="card">
     <div id="content">
         <div id="breadcumb">
@@ -114,17 +117,56 @@
                       <label class="form-check-label" for="exampleCheck1">Accepter du købsbetingelserne</label>
                     </div>    
                   </div>
-                  
                   <div id="bekræft">
-                    <button type="button" class="btn btn-primary"><i id="accept" class="material-icons md-36">done</i>Bekræft</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i id="accept" class="material-icons md-36">done</i>Bekræft
                   </div>
-                    
+                 
+                  </button>   
+
                 </div>
-              </div>
+
+
+
         </div>
 
+        
+
+    </div>
+    <div id="footer">
+    <footer class="bg-primary ">
+    <div class="container p-4 shadow">  
+      <section class="">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h6  onclick="location.href='index.html'">Hjælp</h6>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2022 Copyright:
+      <a class="text-dark" href="index.html">XD-IT.com</a>
+    </div>
+  </footer>
     </div>
 
+
+  
+  <!-- Pop-Up -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tak for din bestilling!</h5>
+          </button>
+        </div>
+        <div class="modal-body">
+          Du kan finde din bil under "Aktiv Bil" siden
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="location.href='index.html'">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 <script src="scripts/main.js"></script>
