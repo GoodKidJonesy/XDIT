@@ -54,15 +54,13 @@ body {
         max-width: 90vw;
         height: 60vw;
     }
+    #content {
+        margin-bottom: 21em;
+    }
 }
 
 @media (min-width: 1000px) {
     /*pc*/
-    #content {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: left;
-    }
     #mapContainer {
         display: flex;
         justify-content: center;
@@ -73,5 +71,11 @@ body {
         margin: 20px 0 0 50px;
         height: 400px;
         float: left;
+    }
+    #content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        margin-bottom: 15em;
     }
 }

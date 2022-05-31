@@ -47,6 +47,9 @@ button {
     #help {
         width: 40%;
     }
+    #content {
+        margin-top: 4em;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -59,5 +62,8 @@ button {
     }
     #help {
         width: 30%;
+    }
+    #content {
+        margin-top: 6em;
     }
 }

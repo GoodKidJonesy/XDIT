@@ -23,198 +23,193 @@
     <title>XDIT - Kortoplysninger</title>
 </head>
 
-<header class="fullwidth">
-    <div id="top" class="navigationbar">
-        <nav class="navbar color-primary">
-            <i id="back" class="material-icons material-iconsnav light-text " onclick="location.href='index.html'">keyboard_backspace</i>
-            <a class="navbar-brand light-text" href="#"><h1>XD-IT</h1></a>
-            <i id="login" class="material-icons material-iconsnav light-text ">account_circle</i>
-        </nav>
-    </div>
-</header>
-
-
 <body class="card">
+    <header>
+        <div id="top" class="navigationbar fullwidth">
+            <nav class="navbar color-primary">
+                <i id="back" class="material-icons material-iconsnav text-light" onclick="location.href='index.html'">keyboard_backspace</i>
+                <a class="navbar-brand text-light" href="#">
+                    <h1 style="margin-top: 0px" class="headerText">XD-IT</h1>
+                </a>
+                <i id="login" class="material-icons material-iconsnav text-light ">account_circle</i>
+            </nav>
+        </div>
+    </header>
+
     <div id="content" class="color-background">
         <div id="breadcrumb">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Forside</a></li>
-                  <li class="breadcrumb-item"><a href="order.html">Bestil en bil</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Betal</li>
+                    <li class="breadcrumb-item"><a href="index.html">Forside</a></li>
+                    <li class="breadcrumb-item"><a href="order.html">Bestil en bil</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Betal</li>
                 </ol>
-              </nav>
+            </nav>
         </div>
         <div id="betaling">
             <div class="card color-light">
                 <div class="card-header">
                     <i id="cardicon" class="material-icons">credit_card</i>
                     <h3 id="betalingtext">Betaling</h1>
-                  </div>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title"></h5>
-                  <h6 class="card-subtitle mb-2 text-muted text">Indtast dine kortoplysning</h6>
-                  <div id="fornavn">
-                    <label class="text">Fornavn</label>  
-                    <input type="text" class="form-control" placeholder="Fornavn">
-                  </div>
-                  <div id="efternavn">
-                    <form>
-                        <div class="row">
-                          <div class="col">
-                            <label class="text">Mellemnavn</label> 
-                            <input type="text" class="form-control" placeholder="Mellemnavn">
-                            </div>
-                          <div class="col">
-                            <label class="text">Efternavn</label> 
-                            <input type="text" class="form-control" placeholder="Efternavn">
-                          </div>
-                        </div>
-                        </form>
-                  </div>  
-                  <div id="emailaddress">
-                    <label  class="text">Email adresse</label>
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                      </div>
-                        <input type="text" class="form-control" placeholder="Email adresse">
+                    <h5 class="card-title"></h5>
+                    <h6 class="card-subtitle mb-2 text-muted text">Indtast dine kortoplysning</h6>
+                    <div id="fornavn">
+                        <label class="text">Fornavn</label>
+                        <input type="text" class="form-control" placeholder="Fornavn">
                     </div>
-                  </div>
-                  <div id="address">
-                    <label  class="text">Adresse</label> 
-                    <input type="text" class="form-control" placeholder="Adresse">
-                  </div>
-                  <div id="cardname">
-                    <label  class="text">Navn på kort</label> 
-                    <input type="text" class="form-control" placeholder="Navn på kort">
-                  </div>
-                  <div id="cardnumber">
-                    <label  class="text">Kortnummer</label> 
-                    <input type="text" class="form-control" placeholder="Kortnummer">
-                  </div>   
-                  <div id="cardinfo">
-                    <form>
-                      <div class="row">
-                        <div class="col">
-                          <label  class="text">Udløbs-dato</label> 
-                          <input type="text" class="form-control" placeholder="Udløbs-dato">
+                    <div id="efternavn">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="text">Mellemnavn</label>
+                                    <input type="text" class="form-control" placeholder="Mellemnavn">
+                                </div>
+                                <div class="col">
+                                    <label class="text">Efternavn</label>
+                                    <input type="text" class="form-control" placeholder="Efternavn">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="emailaddress">
+                        <label class="text">Email adresse</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Email adresse">
                         </div>
-                        <div class="col">
-                          <label  class="text">CVV</label> 
-                          <input type="text" class="form-control" placeholder="CVV">
+                    </div>
+                    <div id="address">
+                        <label class="text">Adresse</label>
+                        <input type="text" class="form-control" placeholder="Adresse">
+                    </div>
+                    <div id="cardname">
+                        <label class="text">Navn på kort</label>
+                        <input type="text" class="form-control" placeholder="Navn på kort">
+                    </div>
+                    <div id="cardnumber">
+                        <label class="text">Kortnummer</label>
+                        <input type="text" class="form-control" placeholder="Kortnummer">
+                    </div>
+                    <div id="cardinfo">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="text">Udløbs-dato</label>
+                                    <input type="text" class="form-control" placeholder="Udløbs-dato">
+                                </div>
+                                <div class="col">
+                                    <label class="text">CVV</label>
+                                    <input type="text" class="form-control" placeholder="CVV">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="checkbeløb">
+                        <div id="beløb">
+                            <h6 class="card-subtitle mb-2 text-muted text2">Beløb:</h6>
+                            <p class="card-text text2">0.00 kr.</p>
                         </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div id="checkbeløb">
-                    <div id="beløb">
-                      <h6 class="card-subtitle mb-2 text-muted text2">Beløb:</h6>  
-                      <p class="card-text text2">0.00 kr.</p>
-                    </div> 
-                    <div id="checkbox" class="text">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Accepter du købsbetingelserne</label>
-                    </div>    
-                  </div>
-                  <div id="bekræft">
-                    <button type="button" class="btn color-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i id="accept" class="material-icons md-36 light-text">done</i><span class="light-text">Bekræft</span>
-                  </div>
-                 
-                  </button>   
+                        <div id="checkbox" class="text">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Accepter du købsbetingelserne</label>
+                        </div>
+                    </div>
+                    <div id="bekræft">
+                        <button type="button" class="btn color-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i id="accept" class="material-icons md-36 light-text">done</i><span class="light-text">Bekræft</span>
+          </div>
+
+          </button>
+
+                    </div>
 
                 </div>
+
 
             </div>
 
 
-         </div>
+            <!-- Footer -->
+            <footer class="text-center text-lg-start text-white color-primary fullwidth">
+                <!-- Section: Links  -->
+                <section>
+                    <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <!-- Grid column -->
+                            <div id="linkfoot" class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <!-- Content -->
+                                <h6 class="text-uppercase fw-bold">XD-IT</h6>
+                                <p>
+                                    Vi er XD-IT - extra ordinary driving interactive technology. Vi som firma vil gerne give dig den bedste mulige bil-udlejnings oplevelse.
 
-    
-<!-- Footer -->
-<footer class="text-center text-lg-start text-white color-primary fullwidth">
-    <!-- Section: Links  -->
-    <section>
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div id="linkfoot" class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold">XD-IT</h6>
-            <p>
-              Vi er XD-IT - extra ordinary driving interactive technology. Vi som firma vil gerne give dig
-              den bedste mulige bil-udlejnings oplevelse.
-              
-            </p>
-          </div>
-          <!-- Grid column -->
+                                </p>
+                            </div>
+                            <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div id="linkfoot" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Links</h6>
-            <p>
-              <a href="#!" class="text-white">Forside</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Aktiv Bil</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Hjælp</a>
-            </p>
-          </div>
-          <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div id="linkfoot" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold">Links</h6>
+                                <p>
+                                    <a href="#!" class="text-white">Forside</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-white">Aktiv Bil</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-white">Hjælp</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
 
-      
 
-          <!-- Grid column -->
-          <div id="linkfoot" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
-            <p><i class="fas fa-home mr-3"></i> Rueds Langgade 23, Købehavn S, 2300, Danmark</p>
-            <p><i class="fas fa-envelope mr-3"></i> xd-it@company.com</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
 
-    <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)"
-         >
-      © 2022 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/"
-         >www.XD-IT.com</a
-        >
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+                            <!-- Grid column -->
+                            <div id="linkfoot" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold">Contact</h6>
+                                <p><i class="fas fa-home mr-3"></i> Rueds Langgade 23, Købehavn S, 2300, Danmark</p>
+                                <p><i class="fas fa-envelope mr-3"></i> xd-it@company.com</p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
 
-  
-  <!-- Pop-Up -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Tak for din bestilling!</h5>
-          </button>
-        </div>
-        <div class="modal-body">
-          Du kan finde din bil under "Aktiv Bil" siden
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="location.href='index.html'">Ok</button>
-        </div>
-      </div>
-    </div>
-  </div>
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2022 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/">www.XD-IT.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+
+
+            <!-- Pop-Up -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tak for din bestilling!</h5>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Du kan finde din bil under "Aktiv Bil" siden
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="location.href='index.html'">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 </body>
 <script src="scripts/main.js"></script>

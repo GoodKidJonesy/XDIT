@@ -67,22 +67,13 @@ body {
     max-width: 90vw;
     height: 60vw;
   }
+  #content {
+    margin-bottom: 21em;
+  }
 }
 
 @media (min-width: 1000px) {
   /*pc*/
-  #content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
   #mapContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -97,6 +88,19 @@ body {
     margin: 20px 0 0 50px;
     height: 400px;
     float: left;
+  }
+  #content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 15em;
   }
 }
 /*# sourceMappingURL=order.css.map */
