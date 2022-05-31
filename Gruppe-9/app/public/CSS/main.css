@@ -19,11 +19,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 
-header {
+.fullwidth {
   width: 100vw;
 }
 
@@ -64,9 +68,16 @@ header {
   margin-top: 1rem;
 }
 
+#breadcrumb {
+  position: absolute;
+  left: 0;
+  margin-left: 1rem;
+}
+
 #content {
   margin-left: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .material-icon {
