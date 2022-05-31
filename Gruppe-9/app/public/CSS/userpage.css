@@ -38,6 +38,14 @@
   text-align: right;
 }
 
+#foottext {
+  margin-top: 1rem;
+}
+
+#linkfoot {
+  padding-top: 3rem;
+}
+
 @media (max-width: 600px) {
   /*mobile*/
   #back {
@@ -50,25 +58,9 @@
 
 @media (min-width: 601px) and (max-width: 999px) {
   /*tablet*/
-  #minebiler {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 @media (min-width: 1000px) {
   /*pc*/
-  #minebiler {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .button {
-    margin-top: 1rem;
-  }
 }
 /*# sourceMappingURL=userpage.css.map */

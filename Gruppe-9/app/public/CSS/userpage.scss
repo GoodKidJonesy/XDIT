@@ -57,21 +57,12 @@
 
 @media (min-width: 601px) and (max-width: 999px) {
     /*tablet*/
-    #minebiler {
-        display: flex;
-        justify-content: center;
-    }
+   
 }
 
 @media (min-width: 1000px) {
     /*pc*/
-    #minebiler {
-        justify-content: center;
-    }
-
-    .button {
-        margin-top: 1rem;
-    }
+  
 
    
 }
