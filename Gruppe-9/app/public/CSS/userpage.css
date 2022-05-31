@@ -9,21 +9,18 @@
   margin-bottom: 1rem;
 }
 
+#content {
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
 @media (max-width: 600px) {
   /*mobile*/
-  #top {
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  }
   #back {
     padding-left: 1rem;
   }
   #login {
     padding-right: 1rem;
-  }
-  #content {
-    margin-left: 1rem;
-    margin-top: 1rem;
   }
   #minebiler {
     display: -ms-grid;

@@ -24,7 +24,7 @@
 </head>
 
 <header>
-    <div id="top">
+    <div id="top" class="navigationbar">
         <nav class="navbar bg-primary">
             <i id="back" class="material-icons md-36" onclick="location.href='index.html'">reply</i>
             <a class="navbar-brand" href="#"><h1>XD-IT</h1></a>
@@ -50,53 +50,76 @@
                     <h3 id="betalingtext">Betaling</h1>
                   </div>
                 <div class="card-body">
-                    
                   <h5 class="card-title"></h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Indtast dine kortoplysning</h6>
-                  
-                  <label>Fornavn</label>  
-                  <input type="text" class="form-control" placeholder="Fornavn">
-                
+                  <h6 class="card-subtitle mb-2 text-muted text">Indtast dine kortoplysning</h6>
+                  <div id="fornavn">
+                    <label class="text">Fornavn</label>  
+                    <input type="text" class="form-control" placeholder="Fornavn">
+                  </div>
+                  <div id="efternavn">
                     <form>
-                    <div class="form-row">
-                      <div class="col">
-                        <label>Mellemnavn</label> 
-                        <input type="text" class="form-control" placeholder="Mellemnavn">
-                     
+                        <div class="row">
+                          <div class="col">
+                            <label class="text">Mellemnavn</label> 
+                            <input type="text" class="form-control" placeholder="Mellemnavn">
+                            </div>
+                          <div class="col">
+                            <label class="text">Efternavn</label> 
+                            <input type="text" class="form-control" placeholder="Mellemnavn">
+                          </div>
                         </div>
-                      <div class="col">
-                        <label>Efternavn</label> 
-                        <input type="text" class="form-control" placeholder="Mellemnavn">
+                        </form>
+                  </div>  
+                  <div id="emailaddress">
+                    <label  class="text">Email adresse</label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
                       </div>
+                        <input type="text" class="form-control" placeholder="Mellemnavn">
                     </div>
+                  </div>
+                  <div id="address">
+                    <label  class="text">Adresse</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
+                  </div>
+                  <div id="cardname">
+                    <label  class="text">Navn på kort</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
+                  </div>
+                  <div id="cardnumber">
+                    <label  class="text">Kortnummer</label> 
+                    <input type="text" class="form-control" placeholder="Mellemnavn">
+                  </div>   
+                  <div id="cardinfo">
+                    <form>
+                      <div class="row">
+                        <div class="col">
+                          <label  class="text">Udløbs-dato</label> 
+                          <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                          <label  class="text">CVV</label> 
+                          <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                      </div>
                     </form>
-                    <label>Email adresse</label> 
-                    <input type="text" class="form-control" placeholder="Mellemnavn">
+                  </div>
+                  <div id="checkbeløb">
+                    <div id="beløb">
+                      <h6 class="card-subtitle mb-2 text-muted text2">Beløb:</h6>  
+                      <p class="card-text text2">0.00 kr.</p>
+                    </div> 
+                    <div id="checkbox" class="text">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Accepter du købsbetingelserne</label>
+                    </div>    
+                  </div>
+                  
+                  <div id="bekræft">
+                    <button type="button" class="btn btn-primary"><i id="accept" class="material-icons md-36">done</i>Bekræft</button>
+                  </div>
                     
-                    <label>Adresse</label> 
-                    <input type="text" class="form-control" placeholder="Mellemnavn">
-
-                     
-                    <label>Navn på kort</label> 
-                    <input type="text" class="form-control" placeholder="Mellemnavn">
-
-
-                    <label>Kortnummer</label> 
-                    <input type="text" class="form-control" placeholder="Mellemnavn">
-
-                    <label>Udløbs-dato</label> 
-                    <input type="text" class="form-control" placeholder="Mellemnavn">
-
-                    <label>CVV</label> 
-                    <input type="text" class="form-control" placeholder="Mellemnavn">
-                    
-                    <h6 class="card-subtitle mb-2 text-muted">Beløb:</h6>  
-                    <p class="card-text">0.00 kr.</p>
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Accepter du købsbetingelserne</label>
-
-                    <button type="button" class="btn btn-primary">Bekræft</button>
-
                 </div>
               </div>
         </div>
