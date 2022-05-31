@@ -7,6 +7,15 @@ body {
           justify-content: center;
 }
 
+#breadcrumb {
+  margin-top: 1rem;
+}
+
+#title {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 #carCarousel {
   max-width: 400px;
   width: 90vw;
