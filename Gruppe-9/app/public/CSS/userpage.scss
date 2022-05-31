@@ -1,18 +1,41 @@
 /*for all*/
 
-.material-icon {
-    color: white;
-  }
 
 .button {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-#content {
-    margin-left: 1rem;
-    margin-top: 2rem;
+#minebiler {
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
+
+#aktivbiltext {
+    margin-top: 1rem;
+}
+
+.card-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#biltype {
+    display: inline;
+    text-align: left;
+}
+
+#strøm {
+    display: inline;
+    text-align: left;
+}
+
+#pris {
+    display: inline;
+    text-align: right;
+}
+
 
 
 @media (max-width: 600px) {
@@ -23,9 +46,6 @@
         padding-left: 1rem;
     }
 
-    #logo {
-
-    }
 
     #login {
         padding-right: 1rem;
@@ -33,37 +53,6 @@
     }
 
 
-    #minebiler {
-        display: grid;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #aktivbiltext {
-        margin-top: 1rem;
-    }
-
-    .card-title {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    #biltype {
-        display: inline;
-        text-align: left;
-    }
-
-    #strøm {
-        display: inline;
-        text-align: left;
-    }
-
-    #pris {
-        display: inline;
-        text-align: right;
-    }
-    
-    
 }
 
 @media (min-width: 601px) and (max-width: 999px) {
@@ -84,13 +73,5 @@
         margin-top: 1rem;
     }
 
-    #login {
-        width: 50px;
-        height: 50px;
-    }
-
-    #back {
-        width: 50px;
-        height: 50px;
-    }
+   
 }
