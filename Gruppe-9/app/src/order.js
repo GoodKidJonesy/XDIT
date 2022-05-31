@@ -1,5 +1,12 @@
-function orderInit() {
+function loadCars() {
 
+}
+
+function insertCars() {
+    
+}
+
+function orderInit() {
 }
 
 export { orderInit };
