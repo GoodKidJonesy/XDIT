@@ -1,5 +1,5 @@
 function loadCars() {
-
+    
 }
 
 function insertCars() {
