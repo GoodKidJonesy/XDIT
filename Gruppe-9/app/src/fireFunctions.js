@@ -13,15 +13,151 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 'use strict';
+'use strict';
 
- import { initializeApp } from 'firebase/app';
- import {
-   getAuth,
-   onAuthStateChanged,
-   GoogleAuthProvider,
-   signInWithPopup,
-   signOut,
- } from 'firebase/auth';
- 
- import { getFirebaseConfig } from './firebase-config.js';
+import {
+    getAuth,
+    onAuthStateChanged,
+    GoogleAuthProvider,
+    signInWithPopup,
+    signOut
+} from 'firebase/auth';
+
+import {
+    getFirestore,
+    collection,
+    addDoc,
+    query,
+    orderBy,
+    limit,
+    onSnapshot,
+    setDoc,
+    updateDoc,
+    doc,
+    getDocs,
+    serverTimestamp,
+    limitToLast,
+} from 'firebase/firestore';
+
+// Firebase sign-in.
+async function signIn() {
+    var provider = new GoogleAuthProvider();
+    await signInWithPopup(getAuth(), provider);
+}
+
+// Firebase sign-out.
+function signOutUser() {
+    signOut(getAuth());
+}
+
+// Initiate firebase auth
+export function initFirebaseAuth() {
+    onAuthStateChanged(getAuth(), authStateObserver);
+}
+
+// Returns the signed-in user's profile Pic URL.
+function getProfilePicUrl() {
+    return getAuth().currentUser.photoURL || '../resources/ic_person_24px.png';
+}
+
+// Returns the signed-in user's display name.
+function getUserName() {
+    try {
+        return getAuth().currentUser.displayName;
+    } catch (er) { console.log("User logged in: " + isUserSignedIn()) }
+}
+
+// Returns true if a user is signed-in.
+function isUserSignedIn() {
+    return !!getAuth().currentUser;
+}
+
+// Returns true if user is signed-in. Otherwise false and displays a message.
+function checkSignedIn() {
+    // Return true if the user is signed in Firebase
+    if (isUserSignedIn()) {
+        return true;
+    }
+
+    // Display a message to the user using a Toast.
+    var data = {
+        message: 'You must sign-in first',
+        timeout: 2000
+    };
+    signInSnackbarElement.MaterialSnackbar.showSnackbar(data);
+    return false;
+}
+// Adds a size to Google Profile pics URLs.
+function addSizeToGoogleProfilePic(url) {
+    if (url.indexOf('googleusercontent.com') !== -1 && url.indexOf('?') === -1) {
+        return url + '?sz=150';
+    }
+    return url;
+}
+
+// Triggers when the auth state change for instance when the user signs-in or signs-out.
+function authStateObserver(user) {
+    if (user) {
+        // User is signed in!
+        // Get the signed-in user's profile pic and name.
+        var profilePicUrl = getProfilePicUrl();
+        var userName = getUserName();
+
+        // Set the user's profile pic and name.
+        userPicElement.src = addSizeToGoogleProfilePic(profilePicUrl);
+        userNameElement.textContent = userName;
+        userNameElement.removeAttribute('hidden');
+        userPicElement.removeAttribute('hidden');
+        signOutButtonElement.removeAttribute('hidden');
+        signInButtonElement.setAttribute('hidden', 'true');
+    }
+    else {
+        // User is signed out!
+        // Hide user's profile and sign-out button.
+        userNameElement.setAttribute('hidden', 'true');
+        userPicElement.setAttribute('hidden', 'true');
+        signOutButtonElement.setAttribute('hidden', 'true');
+        signInButtonElement.removeAttribute('hidden');
+
+        // Show sign-in button.
+        signInButtonElement.removeAttribute('hidden');
+    }
+}
+    export async function bookCar(car) {
+        try {
+            await addDoc(collection(getFirestore(), getAuth().currentUser.getIdToken() + "order"), {
+                model: car.model,
+                time: serverTimestamp(),
+                price: car.price
+            });
+        } catch (err) { console.log(err); }
+    }
+
+    export function getBookedCar() {
+        let order;
+        const querySnapshot = query(collection(getFirestore(), getAuth().currentUser.getIdToken() + "order"), orderBy('time', 'desc'), limit(1));
+        querySnapshot.forEach((doc) => {
+            order = doc;
+        });
+        return order;
+    }
+
+    export async function getCars() {
+        let cars = [];
+        const querySnapshot = await getDocs(collection(getFirestore(), "cars"));
+        querySnapshot.forEach((doc) => {
+            cars.push(doc.data());
+        });
+        return cars;
+    }
+
+/*
+  // Shortcuts to DOM Elements.
+var userPicElement = document.getElementById('user-pic');
+var userNameElement = document.getElementById('user-name');
+var signInButtonElement = document.getElementById('sign-in');
+var signOutButtonElement = document.getElementById('sign-out');
+
+signOutButtonElement.addEventListener('click', signOutUser);
+signInButtonElement.addEventListener('click', signIn);
+*/
