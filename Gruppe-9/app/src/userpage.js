@@ -1,5 +1,4 @@
 function userpageInit() {
-    console.log("rofl");
 
 }
 

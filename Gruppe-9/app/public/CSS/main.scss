@@ -1,16 +1,49 @@
-:root {
-    --light: #c0e3ff; /*primary*/
-    --white: #FFFFFF; /*secondary*/
+$clr-primary: #0C7489;
+$clr-secondary: #119DA4;
+$clr-background: #0f424b;
+$clr-dark: #040404;
+$clr-light: #D7D9CE;
+.center-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 body {
-    background-color: var(--light);
+    background-color: $clr-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
-button {
-    background-color: var(--white);
+
+.page {
+    height: 85vh;
+    width: 85vw;
+    background-color: $clr-light;
+    border-radius: 25px;
+    overflow: auto;
+    box-shadow: 10px 10px 50px darken($clr-background, 10%);
 }
-button:hover {
-    cursor: pointer;
+
+.main {
+    min-width: 100%;
+    min-height: 100%;
 }
-image {
-    max-width: 100%;
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+    .page {
+        box-shadow: 20px 20px 50px darken($clr-background, 10%);
+    }
+}
+
+@media (min-width: 1000px) {
+    .page {
+        box-shadow: 30px 30px 50px darken($clr-background, 10%);
+    }
 }
