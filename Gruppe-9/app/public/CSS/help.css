@@ -1,6 +1,5 @@
 /*for all*/
 body {
-  min-height: 150vh;
   overflow-y: overlay;
   margin-top: 0px !important;
 }
@@ -129,7 +128,7 @@ body {
 }
 
 footer {
-  margin-top: auto;
+  margin-top: auto !important;
 }
 
 .headerText {
