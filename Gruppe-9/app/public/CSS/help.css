@@ -1,23 +1,84 @@
 /*for all*/
+.center-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background-color: #0f424b;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page {
+  height: 85vh;
+  width: 85vw;
+  background-color: #D7D9CE;
+  border-radius: 25px;
+  overflow: auto;
+  -webkit-box-shadow: 10px 10px 50px #071d21;
+          box-shadow: 10px 10px 50px #071d21;
+}
+
+.main {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+  .page {
+    -webkit-box-shadow: 20px 20px 50px #071d21;
+            box-shadow: 20px 20px 50px #071d21;
+  }
+}
+
+@media (min-width: 1000px) {
+  .page {
+    -webkit-box-shadow: 30px 30px 50px #071d21;
+            box-shadow: 30px 30px 50px #071d21;
+  }
+}
+
 .collapsible {
-  background-color: #EEE;
-  color: black;
+  background-color: #119DA4;
+  color: #040404;
   cursor: pointer;
   padding: 18px;
   width: 85%;
   text-align: left;
   outline: none;
+  border: none;
   font-size: 15px;
+  border-radius: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .active,
 .collapsible:hover {
-  background-color: #DDD;
+  background-color: #0C7489;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .collapsible:after {
   content: '\002B';
-  color: black;
+  color: #040404;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -34,11 +95,15 @@
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #c0c3b1;
+  color: #040404;
   margin-bottom: 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 h1 {
+  color: #040404;
   margin-bottom: 1em;
   margin-top: 1em;
 }
