@@ -12,10 +12,13 @@ $clr-light: #D7D9CE;
 body {
     background-color: $clr-background;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+}
+
+.fullwidth {
+    width: 100vw;
 }
 
 .page {
