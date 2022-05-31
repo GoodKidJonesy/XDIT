@@ -23,7 +23,7 @@ body {
 }
 
 .page {
-    height: 85vh;
+    min-height: 85vh;
     width: 85vw;
     background-color: $clr-light;
     border-radius: 25px;
@@ -40,13 +40,12 @@ body {
     width: 0;
 }
 
-
 #top {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 #shadow {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 #linkfoot {
@@ -71,15 +70,22 @@ body {
 
 .material-icon {
     color: black;
-  }
+}
+
+.nav-footer-color {
+    background-color: darken($clr-background, 5);
+}
+
+.light-text {
+    color: $clr-light;
+}
 
 #footer {
     margin-top: 1rem;
 }
 
-.material-iconsnav { 
-    font-size: 40px; 
-    
+.material-iconsnav {
+    font-size: 40px;
 }
 
 #back {

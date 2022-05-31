@@ -1,6 +1,6 @@
 /*for all*/
 
-
+@import "./main.scss";
 .button {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -36,33 +36,24 @@
     text-align: right;
 }
 
-
+.card {
+    background-color: darken($clr-light, 10);
+}
 
 @media (max-width: 600px) {
     /*mobile*/
-    
-
     #back {
         padding-left: 1rem;
     }
-
-
     #login {
         padding-right: 1rem;
-
     }
-
-
 }
 
 @media (min-width: 601px) and (max-width: 1000px) {
     /*tablet*/
-   
 }
 
 @media (min-width: 1000px) {
     /*pc*/
-  
-
-   
 }
