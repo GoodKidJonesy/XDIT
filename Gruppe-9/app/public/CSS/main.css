@@ -88,6 +88,18 @@ body {
   margin-top: 1rem;
 }
 
+.material-icons {
+  font-size: 40px;
+}
+
+#back {
+  margin-left: 1rem;
+}
+
+#login {
+  margin-right: 1rem;
+}
+
 @media (min-width: 601px) and (max-width: 999px) {
   .page {
     -webkit-box-shadow: 20px 20px 50px #071d21;
