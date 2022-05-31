@@ -1,196 +1,221 @@
 /*for all*/
-
 .center-stack {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.color-primary {
+  background-color: #344966;
+}
+
+.color-secondary {
+  background-color: #FFFFFF;
+}
+
+.color-background {
+  background-color: #FFFFFF;
+}
+
+.color-dark {
+  background-color: #040404;
+}
+
+.color-light {
+  background-color: #F0F4EF;
 }
 
 body {
-    background-color: #0f424b;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 
 .fullwidth {
-    width: 100vw;
+  width: 100vw;
 }
 
 .page {
-    height: 85vh;
-    width: 85vw;
-    background-color: #D7D9CE;
-    border-radius: 25px;
-    overflow: auto;
-    -webkit-box-shadow: 10px 10px 50px #071d21;
-    box-shadow: 10px 10px 50px #071d21;
+  min-height: 85vh;
+  width: 85vw;
+  background-color: #F0F4EF;
+  border-radius: 25px;
+  overflow: auto;
+  -webkit-box-shadow: 10px 10px 50px #e6e6e6;
+          box-shadow: 10px 10px 50px #e6e6e6;
 }
 
 .main {
-    min-width: 100%;
-    min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 #top {
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 #shadow {
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 #linkfoot {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 #foottext {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #breadcrumb {
-    position: absolute;
-    left: 0;
-    margin-left: 1rem;
+  position: absolute;
+  left: 0;
+  margin-left: 1rem;
 }
 
 #content {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .material-icon {
-    color: black;
+  color: black;
+}
+
+.nav-footer-color {
+  background-color: #2b3d55;
+}
+
+.light-text {
+  color: #F0F4EF;
 }
 
 #footer {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .material-iconsnav {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 #back {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 #login {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 @media (min-width: 601px) and (max-width: 999px) {
-    .page {
-        -webkit-box-shadow: 20px 20px 50px #071d21;
-        box-shadow: 20px 20px 50px #071d21;
-    }
+  .page {
+    -webkit-box-shadow: 20px 20px 50px #e6e6e6;
+            box-shadow: 20px 20px 50px #e6e6e6;
+  }
 }
 
 @media (min-width: 1000px) {
-    .page {
-        -webkit-box-shadow: 30px 30px 50px #071d21;
-        box-shadow: 30px 30px 50px #071d21;
-    }
+  .page {
+    -webkit-box-shadow: 30px 30px 50px #e6e6e6;
+            box-shadow: 30px 30px 50px #e6e6e6;
+  }
 }
 
 .collapsible {
-    background-color: #119DA4;
-    color: #040404;
-    cursor: pointer;
-    padding: 18px;
-    width: 85%;
-    text-align: left;
-    outline: none;
-    border: none;
-    font-size: 15px;
-    border-radius: 10px;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
+  background-color: #FFFFFF;
+  color: #040404;
+  cursor: pointer;
+  padding: 18px;
+  width: 85%;
+  text-align: left;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .active,
 .collapsible:hover {
-    background-color: #0C7489;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+  background-color: #344966;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .collapsible:after {
-    content: '\002B';
-    color: #040404;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+  content: '\002B';
+  color: #040404;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 
 .active:after {
-    content: "\2212";
+  content: "\2212";
 }
 
 .content {
-    padding: 0 18px;
-    max-height: 0;
-    width: 85%;
-    overflow: hidden;
-    -webkit-transition: max-height 0.2s ease-out;
-    transition: max-height 0.2s ease-out;
-    background-color: #c0c3b1;
-    color: #040404;
-    margin-bottom: 1em;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  padding: 0 18px;
+  max-height: 0;
+  width: 85%;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background-color: #d4dfd1;
+  color: #040404;
+  margin-bottom: 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 h1 {
-    color: #040404;
-    margin-bottom: 1em;
-    margin-top: 1em;
+  color: #040404;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 @media (max-width: 600px) {
-    /*phone*/
+  /*phone*/
 }
 
 @media (min-width: 601px) and (max-width: 1000px) {
-    .collapsible {
-        width: 75%;
-    }
-    .content {
-        width: 75%;
-    }
+  .collapsible {
+    width: 75%;
+  }
+  .content {
+    width: 75%;
+  }
 }
 
 @media (min-width: 1000px) {
-    .collapsible {
-        width: 60%;
-    }
-    .content {
-        width: 60%;
-    }
+  .collapsible {
+    width: 60%;
+  }
+  .content {
+    width: 60%;
+  }
 }
-
-
 /*# sourceMappingURL=help.css.map */

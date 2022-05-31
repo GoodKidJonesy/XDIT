@@ -1,16 +1,12 @@
 /*for all*/
 
-
-
 #betaling {
     display: grid;
     justify-content: center;
-    
 }
 
 .text {
     text-align: left;
-    
 }
 
 .text2 {
@@ -54,13 +50,10 @@
     vertical-align: middle;
 }
 
-#checkbeløb {
-    
-}
+#checkbeløb {}
 
 @media (max-width: 600px) {
     /*mobile*/
-
 }
 
 @media (min-width: 601px) and (max-width: 1000px) {

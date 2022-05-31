@@ -19,7 +19,9 @@ body {
   max-width: 50vw;
 }
 
-.carousel-item-next, .carousel-item-prev, .carousel-item.carousel-item.active {
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.carousel-item.active {
   /*center also when sliding*/
   display: -webkit-box;
   display: -ms-flexbox;

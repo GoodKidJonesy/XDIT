@@ -1,4 +1,5 @@
 /*for all*/
+
 body {
     display: block;
     text-align: center;
@@ -17,7 +18,9 @@ body {
     max-width: 50vw;
 }
 
-.carousel-item-next, .carousel-item-prev, .carousel-item.carousel-item.active {
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.carousel-item.active {
     /*center also when sliding*/
     display: flex;
     justify-content: center;
