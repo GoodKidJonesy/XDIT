@@ -30,19 +30,27 @@
 <body class="cardPage">
     <header id="header">
         <div id="header-left" class="text-light">
-            <i id="back" class="material-icons material-iconsnav md-48"
-                onclick="location.href='index.html'">keyboard_backspace</i>
+            <a role="button"><i id="back" class="material-icons material-iconsnav md-48"
+                onclick="location.href='index.html'">keyboard_backspace</i></a>
         </div>
 
         <div class="text-light">
-            <h1 onclick="location.href='index.html'">XD-IT</h1>
+            <a role="button" onclick="location.href='index.html'"><h1>XD-IT</h1></a>
         </div>
 
         <div id="header-right">
-            <button id="sign-in" class="btn text-light">Log ind</button>
-            <button id="sign-out" class="btn text-light" style="padding-top:0;" hidden>Log ud</button>
-            <i id="def-pic" class="material-icons material-iconsnav text-light md-48" referrerpolicy="no-referrer">account_circle</i>
-            <image id="user-pic" style= "max-height: 48px;"hidden></image>
+
+            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i id="def-pic" class="material-icons material-iconsnav text-light md-48" referrerpolicy="no-referrer">account_circle</i>
+            </a>
+            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <image id="user-pic" style="max-height: 48px;" hidden></image>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#" id="sign-in" class="btn text-dark">Log ind</a>
+                <a class="dropdown-item" href="#" id="sign-out" class="btn text-dark" style="padding-top:0;">Log ud</a>
+            </div>
         </div>
     </header>
 

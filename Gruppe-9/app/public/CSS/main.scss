@@ -74,7 +74,6 @@ body {
     display: flex;
     align-items: center;
     margin-left: 25px;
-    margin-right: 79px;
 }
 
 #breadcrumb {
@@ -105,6 +104,12 @@ body {
 #user-pic {
     border-radius: 50%;
     margin: 2px;
+}
+
+.dropdown-menu {
+    border-color: $clr-dark;
+    border: 2px solid;
+    background-color: $clr-background !important;
 }
 
 @media (max-width: 600px) {
