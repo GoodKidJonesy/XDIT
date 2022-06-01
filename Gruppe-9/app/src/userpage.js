@@ -73,6 +73,9 @@ async function update() {
         try {
             await signIn();
         } catch (e) {
+            alert("Du skal logge ind for at bruge denne side.\n"+
+            "Din browser har muligvis blokeret for login pop-ups. " + 
+            "Du kan logge ind manuelt med brugerikonet i øverste højre hjørne");
             location.href = "index.html";
         }
     }
@@ -86,6 +89,8 @@ async function update() {
         endButton.addEventListener('click', () => location.href = "order.html");
         title.innerHTML = "Du har ikke booket nogen biler";
     }
+    title.removeAttribute("hidden");
+    endButton.removeAttribute("hidden");
 }
 
 //https://www.w3schools.com/howto/howto_js_countdown.asp
@@ -109,7 +114,6 @@ function userpageInit() {
     setTimeout(() => {
         update();
     }, 1000);
-    endButton.removeAttribute("disabled");
 }
 
 export { userpageInit };
