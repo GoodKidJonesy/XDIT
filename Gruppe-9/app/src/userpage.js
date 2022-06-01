@@ -9,7 +9,8 @@ const bill = document.createElement("p");
 
 async function endAndPay() {
     await endBooking();
-    location.reload();
+    alert("Betaling modtaget: " + bill.innerHTML);
+    location.href = "index.html";
 }
 
 async function showCar() {
@@ -52,7 +53,7 @@ async function showCar() {
     time.id = "time";
     const bi = document.createElement("h6");
     bi.classList.add("card-text");
-    bi.innerHTML = "Brugt i:"
+    bi.innerHTML = "Booket i:"
     time.appendChild(bi);
     timer.classList.add("card-text"); //timer (and bill) must be global to live update
     time.appendChild(timer);
@@ -71,7 +72,7 @@ async function update() {
     if (!isUserSignedIn()) {
         try {
             await signIn();
-        } catch(e) {
+        } catch (e) {
             location.href = "index.html";
         }
     }
