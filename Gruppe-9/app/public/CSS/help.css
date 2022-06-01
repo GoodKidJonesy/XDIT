@@ -1,46 +1,4 @@
 /*for all*/
-body {
-  min-height: 150vh;
-  overflow-y: overlay;
-  margin-top: 0px !important;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: grey;
-  border-radius: 20px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-.mainPage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100%;
-  width: 100%;
-  margin-bottom: 4em;
-}
-
 .color-primary {
   background-color: #344966;
 }
@@ -61,186 +19,34 @@ body {
   background-color: #F0F4EF;
 }
 
-body {
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-}
-
-.fullwidth {
-  width: 100vw;
-}
-
-.page {
-  min-height: 85vh;
-  width: 85vw;
-  background-color: #F0F4EF;
-  border-radius: 25px;
-  overflow: auto;
-  -webkit-box-shadow: 10px 10px 50px #e6e6e6;
-          box-shadow: 10px 10px 50px #e6e6e6;
-}
-
-#top {
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-#shadow {
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-.linkfoot {
-  padding-top: 1rem;
-  text-align: center;
-  margin-top: 0px;
-}
-
-#foottext {
-  margin-top: 1rem;
-}
-
-#breadcrumb {
-  position: absolute;
-  left: 0;
-  margin-left: 1rem;
-}
-
-.material-icon {
-  color: black;
-}
-
-.nav-footer-color {
-  background-color: #2b3d55;
-}
-
-.light-text {
+.text-light {
   color: #F0F4EF;
 }
 
-footer {
-  margin-top: auto;
-}
-
-.headerText {
-  margin-top: 0px;
-}
-
-.material-iconsnav {
-  font-size: 40px;
-}
-
-#back {
-  margin-left: 1rem;
-}
-
-#login {
-  margin-right: 1rem;
-}
-
-@media (min-width: 601px) and (max-width: 999px) {
-  .page {
-    -webkit-box-shadow: 20px 20px 50px #e6e6e6;
-            box-shadow: 20px 20px 50px #e6e6e6;
-  }
-  body {
-    height: 100vh;
-  }
-}
-
-@media (min-width: 1000px) {
-  .page {
-    -webkit-box-shadow: 30px 30px 50px #e6e6e6;
-            box-shadow: 30px 30px 50px #e6e6e6;
-  }
-  body {
-    height: 100vh;
-  }
-}
-
-.collapsible {
-  background-color: #FFFFFF;
+.text-dark {
   color: #040404;
-  cursor: pointer;
-  padding: 18px;
-  width: 85%;
-  text-align: left;
-  outline: none;
-  border: none;
-  font-size: 15px;
-  border-radius: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
-.active,
-.collapsible:hover {
+#faq {
+  border: 3px solid;
+  margin-top: 1em;
+  border-radius: 15px;
+}
+
+#q {
   background-color: #344966;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  color: #F0F4EF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: #040404;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  width: 85%;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-  background-color: #d4dfd1;
-  color: #040404;
-  margin-bottom: 1em;
+#a {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-h1 {
-  color: #040404;
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
-
-@media (max-width: 600px) {
-  /*phone*/
-}
-
-@media (min-width: 601px) and (max-width: 1000px) {
-  .collapsible {
-    width: 75%;
-  }
-  .content {
-    width: 75%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .collapsible {
-    width: 60%;
-  }
-  .content {
-    width: 60%;
-  }
+#a, #q p {
+  margin: 0px;
+  padding: 5px;
 }
 /*# sourceMappingURL=help.css.map */

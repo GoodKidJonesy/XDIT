@@ -1,0 +1,32 @@
+$clr-primary: #344966;
+$clr-secondary: #FFFFFF;
+$clr-background: #FFFFFF;
+$clr-dark: #040404;
+$clr-light: #F0F4EF;
+.color-primary {
+    background-color: $clr-primary;
+}
+
+.color-secondary {
+    background-color: $clr-secondary;
+}
+
+.color-background {
+    background-color: $clr-background;
+}
+
+.color-dark {
+    background-color: $clr-dark;
+}
+
+.color-light {
+    background-color: $clr-light;
+}
+
+.text-light {
+    color: $clr-light;
+}
+
+.text-dark {
+    color: $clr-dark;
+}
