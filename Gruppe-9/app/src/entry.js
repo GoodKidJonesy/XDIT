@@ -16,8 +16,8 @@ var userNameElement = document.getElementById('user-name');
 var signInButtonElement = document.getElementById('sign-in');
 var signOutButtonElement = document.getElementById('sign-out');
 
-signOutButtonElement.addEventListener('click', signOutUser);
-signInButtonElement.addEventListener('click', signIn);
+//signOutButtonElement.addEventListener('click', signOutUser);
+//signInButtonElement.addEventListener('click', signIn);
 
 switch (document.body.className) {
     case 'index':

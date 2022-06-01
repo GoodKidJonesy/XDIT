@@ -92,7 +92,7 @@ async function attemptBooking(car) {
     if (!isUserSignedIn()) {
         await signIn();
     }
-    if (hasActiveCar()) {
+    if (await hasActiveCar()) {
         alert('Du kan kun booke én bil ad gangen. \nAfslut din nuværende booking på "Aktiv Bil" siden.');
         location.href = "userpage.html";
         return;
