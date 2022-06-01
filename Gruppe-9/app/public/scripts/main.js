@@ -106,7 +106,7 @@ eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harm
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"cardInit\": () => (/* binding */ cardInit)\n/* harmony export */ });\nfunction cardInit() {\r\n\r\n}\r\n\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY2FyZC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Vld3AyMDIyLy4vc3JjL2NhcmQuanM/NWEyMSJdLCJzb3VyY2VzQ29udGVudCI6WyJmdW5jdGlvbiBjYXJkSW5pdCgpIHtcclxuXHJcbn1cclxuXHJcbmV4cG9ydCB7IGNhcmRJbml0IH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/card.js\n");
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"cardInit\": () => (/* binding */ cardInit)\n/* harmony export */ });\nfunction cardInit() {\r\n    //https://www.w3schools.com/howto/howto_js_countdown.asp\r\n}\r\n\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY2FyZC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Vld3AyMDIyLy4vc3JjL2NhcmQuanM/NWEyMSJdLCJzb3VyY2VzQ29udGVudCI6WyJmdW5jdGlvbiBjYXJkSW5pdCgpIHtcclxuICAgIC8vaHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9ob3d0by9ob3d0b19qc19jb3VudGRvd24uYXNwXHJcbn1cclxuXHJcbmV4cG9ydCB7IGNhcmRJbml0IH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/card.js\n");
 
 /***/ }),
 

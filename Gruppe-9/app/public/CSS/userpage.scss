@@ -20,6 +20,12 @@
     margin-bottom: 0.5rem;
 }
 
+#afslut {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 #biltype {
     display: inline;
     text-align: left;
@@ -35,8 +41,12 @@
     text-align: right;
 }
 
-.card {
-    background-color: darken($clr-light, 10);
+#footer {
+    padding-top: 1rem;
+}
+
+#breadcrumb {
+    margin-top: 0.5rem;
 }
 
 #afslut {
