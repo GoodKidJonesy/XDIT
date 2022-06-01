@@ -101,6 +101,7 @@ function userpageInit() {
     setTimeout(() => {
         update();
     }, 1000);
+    endButton.removeAttribute("disabled");
 }
 
 export { userpageInit };
