@@ -105,21 +105,21 @@ function authStateObserver(user) {
         var userName = getUserName();
 
         // Set the user's profile pic and name.
-        userPicElement.src = addSizeToGoogleProfilePic(profilePicUrl);
-        userNameElement.textContent = userName;
-        userNameElement.removeAttribute('hidden');
-        userPicElement.removeAttribute('hidden');
-        signOutButtonElement.removeAttribute('hidden');
-        defaultPicElement.setAttribute('hidden', 'true');
-        signInButtonElement.setAttribute('hidden', 'true');
+        //userPicElement.src = addSizeToGoogleProfilePic(profilePicUrl);
+        //userNameElement.textContent = userName;
+        //userNameElement.removeAttribute('hidden');
+        //userPicElement.removeAttribute('hidden');
+        //signOutButtonElement.removeAttribute('hidden');
+        //defaultPicElement.setAttribute('hidden', 'true');
+        //signInButtonElement.setAttribute('hidden', 'true');
     }
     else {
         // User is signed out!
         // Hide user's profile and sign-out button.
-        userNameElement.setAttribute('hidden', 'true');
-        userPicElement.setAttribute('hidden', 'true');
-        signOutButtonElement.setAttribute('hidden', 'true');
-        signInButtonElement.removeAttribute('hidden');
+        //userNameElement.setAttribute('hidden', 'true');
+        //userPicElement.setAttribute('hidden', 'true');
+        //signOutButtonElement.setAttribute('hidden', 'true');
+        //signInButtonElement.removeAttribute('hidden');
 
         // Show sign-in button.
         defaultPicElement.removeAttribute('hidden');
@@ -148,7 +148,7 @@ function authStateObserver(user) {
         } catch (err) { console.log(err); }
     }
 
-    export async function getBookedCar() {
+    export async function getBooking() {
         let order = undefined;
         const querySnapshot = await getDocs(collection(getFirestore(), getAuth().currentUser.email + "booking"));
         querySnapshot.forEach((doc) => {
@@ -158,7 +158,7 @@ function authStateObserver(user) {
     }
     
     export async function hasActiveCar() {
-        return (await getBookedCar()).model != "none";
+        return (await getBooking()).model != "none";
     }
 
     export async function getCars() {
