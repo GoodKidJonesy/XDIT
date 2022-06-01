@@ -105,8 +105,6 @@ function authStateObserver(user) {
 
         // Set the user's profile pic and name.
         userPicElement.src = addSizeToGoogleProfilePic(profilePicUrl);
-        userNameElement.textContent = userName;
-        userNameElement.removeAttribute('hidden');
         userPicElement.removeAttribute('hidden');
         signOutButtonElement.removeAttribute('hidden');
         defaultPicElement.setAttribute('hidden', 'true');
@@ -115,7 +113,6 @@ function authStateObserver(user) {
     else {
         // User is signed out!
         // Hide user's profile and sign-out button.
-        userNameElement.setAttribute('hidden', 'true');
         userPicElement.setAttribute('hidden', 'true');
         signOutButtonElement.setAttribute('hidden', 'true');
         signInButtonElement.removeAttribute('hidden');
