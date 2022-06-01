@@ -8,23 +8,27 @@ body {
 
 #breadcrumb {
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 #title {
-    padding-top: 3rem;
     margin-bottom: 2rem;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #carCarousel {
-    max-width: 400px;
     width: 90vw;
     padding-bottom: 50px;
-    margin: auto;
 }
 
 .carousel-item .card img {
-    max-height: 20vh;
-    max-width: 50vw;
+    height: 15vh;
+    width: 60vw;
 }
 
 .carousel-item-next,
@@ -41,6 +45,10 @@ body {
     background-color: white;
 }
 
+.carousel-item{
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 600px) {
     /*mobile*/
     #mapContainer {
@@ -51,30 +59,39 @@ body {
         max-width: 90vw;
         height: 60vw;
     }
+    #carCarousel {
+        align-self: center;
+        margin: 0;
+    }
 }
 
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 601px) and (max-width: 1294px) {
     /*tablet*/
     #mapContainer {
         display: flex;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
         max-width: 90vw;
         height: 60vw;
     }
-    #content {
-        margin-bottom: 21em;
+    #carCarousel {
+        align-self: center;
+        margin: 0;
+    }
+    .carousel-item .card img {
+        height: 25vh;
+        width: 60vw;
     }
 }
 
-@media (min-width: 1000px) {
+
+@media (min-width: 1295px) {
     /*pc*/
     #mapContainer {
         display: flex;
         justify-content: center;
-        width: 60%;
+        width: 100%;
         height: 500px;
+        padding-left: 10%;
     }
     #carCarousel {
         margin: 20px 0 0 50px;
@@ -85,6 +102,12 @@ body {
         display: flex;
         flex-direction: row-reverse;
         justify-content: left;
-        margin-bottom: 15em;
+    }
+    #breadcrumb {
+        margin-left: 2rem;
+    }
+    .carousel-item .card img {
+        height: 30vh;
+        width: 30vw;
     }
 }

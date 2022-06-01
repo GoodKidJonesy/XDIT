@@ -47,6 +47,7 @@
 
 #breadcrumb {
     margin-top: 0.5rem;
+    margin-left: 1rem;
 }
 
 #afslut {
@@ -67,10 +68,17 @@
 }
 
 @media (min-width: 601px) and (max-width: 1000px) {
-
 }
 
 @media (min-width: 1000px) {
+    #back {
+        margin-left: 2rem;
+    }
+
+    #login {
+        margin-right: 2rem;
+    }
+
     #content {
         margin-bottom: 5em;
     }
