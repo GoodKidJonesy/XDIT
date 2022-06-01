@@ -76,7 +76,7 @@ body {
 #content-wrap {
   width: 90vw;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding-bottom: 30px;
   min-height: calc(100vh - 96px - 296px);
 }
 

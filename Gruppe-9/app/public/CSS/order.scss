@@ -12,20 +12,23 @@ body {
 }
 
 #title {
-    padding-top: 3rem;
     margin-bottom: 2rem;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #carCarousel {
-    max-width: 400px;
     width: 90vw;
     padding-bottom: 50px;
-    margin: auto;
 }
 
 .carousel-item .card img {
-    max-height: 20vh;
-    max-width: 50vw;
+    height: 15vh;
+    width: 60vw;
 }
 
 .carousel-item-next,
@@ -56,6 +59,10 @@ body {
         max-width: 90vw;
         height: 60vw;
     }
+    #carCarousel {
+        align-self: center;
+        margin: 0;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 1294px) {
@@ -63,17 +70,16 @@ body {
     #mapContainer {
         display: flex;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
         max-width: 90vw;
         height: 60vw;
     }
-    #content {
-        margin-bottom: 21em;
+    #carCarousel {
+        align-self: center;
+        margin: 0;
     }
-
-    #breadcrumb {
-        margin-left: 1.5rem;
+    .carousel-item .card img {
+        height: 25vh;
+        width: 60vw;
     }
 }
 
@@ -83,7 +89,7 @@ body {
     #mapContainer {
         display: flex;
         justify-content: center;
-        width: 60%;
+        width: 100%;
         height: 500px;
         padding-left: 10%;
     }
@@ -96,12 +102,12 @@ body {
         display: flex;
         flex-direction: row-reverse;
         justify-content: left;
-        margin-bottom: 15em;
-        padding-left: 30%;
     }
-
-    
     #breadcrumb {
         margin-left: 2rem;
+    }
+    .carousel-item .card img {
+        height: 30vh;
+        width: 30vw;
     }
 }
