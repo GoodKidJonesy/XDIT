@@ -1,4 +1,4 @@
-import { getCars } from './fireFunctions'
+import { getCars, bookCar, isUserSignedIn, signIn, hasActiveCar } from './fireFunctions'
 
 //calculates the spherical distance between two lon-lat coordinate sets
 function haversine(lon1, lat1, lon2, lat2) {
@@ -67,18 +67,19 @@ function insertCars(cars) {
         cardTitle.classList.add("card-title");
         cardTitle.innerHTML = "Afstand: " + distString(cars[i].dist);
         cardBody.appendChild(cardTitle);
-        
+
         const cardText = document.createElement("p");
         cardText.classList.add("card-text");
         cardText.innerHTML = "Model: " + cars[i].model + "<br />"
-        + "Strøm: " + cars[i].power + "%" + "<br />"
-        + "Pris: " + cars[i].price + " kr./min";
+            + "Strøm: " + cars[i].power + "%" + "<br />"
+            + "Pris: " + cars[i].price + " kr./min" + "<br />"
+            + "Holder ved: " + "<br />" + cars[i].location;
         cardBody.appendChild(cardText);
 
         const button = document.createElement("a");
         button.classList.add("btn", "btn-primary");
         button.innerHTML = "Book";
-        button.onclick = () => {console.log("hej"); location.href="card.html";}
+        button.onclick = async () => { await attemptBooking(cars[i]); }
         cardBody.appendChild(button);
 
         card.appendChild(cardBody);
@@ -87,64 +88,27 @@ function insertCars(cars) {
     }
 }
 
-function distString(dist) {
-    if (isNaN(dist)) return '-';
-    return dist < 2 ? Math.round(dist * 1000) + " m" : Math.round(dist*10) / 10 + " km";
+async function attemptBooking(car) {
+    if (!isUserSignedIn()) {
+        await signIn();
+    }
+    if (hasActiveCar()) {
+        alert('Du kan kun booke én bil ad gangen. \nAfslut din nuværende booking på "Aktiv Bil" siden.');
+        location.href = "userpage.html";
+        return;
+    }
+    try {
+        await bookCar(car);
+        location.href = "card.html";
+    } catch (e) {
+        alert("Du skal være logget ind for at booke en bil.");
+    }
 }
 
-/*
-    <div id="carCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <img class="card-img-top" src="images/car1.jpg" alt="First slide">
-                        <div class="card-body">
-                            <h5 class="card-title">Afstand: <span class="dist">-</span>m</h5>
-                            <p class="card-text">Model: <span class="model">--</span>
-                                <br> Strøm: <span class="power">-</span>%
-                                <br> Pris: <span class="price">-</span> kr./min
-                            </p>
-                            <a href="card.html" class="btn btn-primary">Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img class="card-img-top" src="images/car2.jpg" alt="First slide">
-                        <div class="card-body">
-                            <h5 class="card-title">Afstand: <span class="dist">-</span>m</h5>
-                            <p class="card-text">Model: <span class="model">--</span>
-                                <br> Strøm: <span class="power">-</span>%
-                                <br> Pris: <span class="price">-</span> kr./min
-                            </p>
-                            <a href="card.html" class="btn btn-primary">Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img class="card-img-top" src="images/car3.jpg" alt="First slide">
-                        <div class="card-body">
-                            <h5 class="card-title">Afstand: <span class="dist">-</span>m</h5>
-                            <p class="card-text">Model: <span class="model">--</span>
-                                <br> Strøm: <span class="power">-</span>%
-                                <br> Pris: <span class="price">-</span> kr./min
-                            </p>
-                            <a href="card.html" class="btn btn-primary">Book</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Forrige</span>
-            </a>
-            <a class="carousel-control-next" href="#carCarousel" role="button" data-bs-slide="next">
-                <span class="sr-only">Næste</span>
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-        </div>
-*/
+function distString(dist) {
+    if (isNaN(dist)) return '-';
+    return dist < 2 ? Math.round(dist * 1000) + " m" : Math.round(dist * 10) / 10 + " km";
+}
 
 function orderInit() {
     getUserLocation();

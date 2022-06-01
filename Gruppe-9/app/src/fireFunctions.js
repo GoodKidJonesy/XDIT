@@ -40,13 +40,13 @@ import {
 } from 'firebase/firestore';
 
 // Firebase sign-in.
-async function signIn() {
+export async function signIn() {
     var provider = new GoogleAuthProvider();
     await signInWithPopup(getAuth(), provider);
 }
 
 // Firebase sign-out.
-function signOutUser() {
+export function signOutUser() {
     signOut(getAuth());
 }
 
@@ -68,7 +68,7 @@ function getUserName() {
 }
 
 // Returns true if a user is signed-in.
-function isUserSignedIn() {
+export function isUserSignedIn() {
     return !!getAuth().currentUser;
 }
 
@@ -109,6 +109,7 @@ function authStateObserver(user) {
         userNameElement.removeAttribute('hidden');
         userPicElement.removeAttribute('hidden');
         signOutButtonElement.removeAttribute('hidden');
+        defaultPicElement.setAttribute('hidden', 'true');
         signInButtonElement.setAttribute('hidden', 'true');
     }
     else {
@@ -120,26 +121,43 @@ function authStateObserver(user) {
         signInButtonElement.removeAttribute('hidden');
 
         // Show sign-in button.
+        defaultPicElement.removeAttribute('hidden');
         signInButtonElement.removeAttribute('hidden');
     }
 }
     export async function bookCar(car) {
         try {
-            await addDoc(collection(getFirestore(), getAuth().currentUser.getIdToken() + "order"), {
+            await addDoc(collection(getFirestore(), getAuth().currentUser.email + "booking"), {
                 model: car.model,
                 time: serverTimestamp(),
-                price: car.price
+                price: car.price,
+                location: car.location
             });
+            console.log("Car successfully booked");
+        } catch (err) { console.log(err); }
+    }
+
+    export async function endBooking() {
+        try {
+            await addDoc(collection(getFirestore(), getAuth().currentUser.email + "booking"), {
+                model: "none",
+                time: serverTimestamp(),
+            });
+            console.log("Car unbooked");
         } catch (err) { console.log(err); }
     }
 
     export function getBookedCar() {
         let order;
-        const querySnapshot = query(collection(getFirestore(), getAuth().currentUser.getIdToken() + "order"), orderBy('time', 'desc'), limit(1));
+        const querySnapshot = query(collection(getFirestore(), getAuth().currentUser.email + "booking"), orderBy('time', 'desc'), limit(1));
         querySnapshot.forEach((doc) => {
             order = doc;
         });
         return order;
+    }
+
+    export function hasActiveCar() {
+        return !(getBookedCar().model === "none");
     }
 
     export async function getCars() {
@@ -151,13 +169,13 @@ function authStateObserver(user) {
         return cars;
     }
 
-/*
+
   // Shortcuts to DOM Elements.
 var userPicElement = document.getElementById('user-pic');
+var defaultPicElement = document.getElementById('def-pic');
 var userNameElement = document.getElementById('user-name');
 var signInButtonElement = document.getElementById('sign-in');
 var signOutButtonElement = document.getElementById('sign-out');
 
 signOutButtonElement.addEventListener('click', signOutUser);
 signInButtonElement.addEventListener('click', signIn);
-*/

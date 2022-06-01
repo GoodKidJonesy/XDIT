@@ -34,9 +34,17 @@ body {
   padding-bottom: 50px;
 }
 
+#carCarousel ol li {
+  background-color: black;
+}
+
 .carousel-item .card img {
   height: 15vh;
   width: 60vw;
+}
+
+.carousel-indicators {
+  margin: 0;
 }
 
 .carousel-item-next,
@@ -121,7 +129,6 @@ body {
     padding-left: 10%;
   }
   #carCarousel {
-    margin: 20px 0 0 50px;
     height: 400px;
     float: left;
   }
@@ -141,8 +148,8 @@ body {
     margin-left: 2rem;
   }
   .carousel-item .card img {
-    height: 30vh;
-    width: 30vw;
+    height: 28vh;
+    width: 25vw;
   }
 }
 /*# sourceMappingURL=order.css.map */
