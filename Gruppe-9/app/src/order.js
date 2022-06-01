@@ -1,4 +1,4 @@
-import { getCars, bookCar, isUserSignedIn, signIn, hasActiveCar } from './fireFunctions'
+import { getCars, isUserSignedIn, signIn, hasActiveCar } from './fireFunctions'
 
 //calculates the spherical distance between two lon-lat coordinate sets
 function haversine(lon1, lat1, lon2, lat2) {
@@ -98,7 +98,7 @@ async function attemptBooking(car) {
         return;
     }
     try {
-        await bookCar(car);
+        localStorage.setItem("chosenCar", JSON.stringify(car));
         location.href = "card.html";
     } catch (e) {
         alert("Du skal være logget ind for at booke en bil.");
