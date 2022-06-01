@@ -158,6 +158,7 @@ function authStateObserver(user) {
     }
     
     export async function hasActiveCar() {
+        if ((await getBooking) == undefined) return false;
         return (await getBooking()).model != "none";
     }
 

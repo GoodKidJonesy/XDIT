@@ -77,9 +77,8 @@ async function update() {
 //https://www.w3schools.com/howto/howto_js_countdown.asp
 function taketime() {
     var now = new Date().getTime();
-  
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+
+    var distance = now - countDownDate;
   
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -96,13 +95,13 @@ function taketime() {
       clearInterval(x);
       document.getElementById("demo").innerHTML = "EXPIRED";
     }
-  }
+}
 
 function userpageInit() {
     setTimeout(() => {
         update();
     }, 1000);
-    let x = 2;
+    let x = setInterval(taketime, 1000);
 }
 
 export { userpageInit };
