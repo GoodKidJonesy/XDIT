@@ -87,6 +87,10 @@ body {
     font-size: 48px;
 }
 
+#user {
+    display: flex;
+}
+
 @media (max-width: 600px) {
     $header-height: 82px;
     $footer-height: 504px;
