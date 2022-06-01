@@ -28,7 +28,7 @@ switch (document.body.className) {
         helpInit();
         break;
 
-    case 'card':
+    case 'cardPage':
         cardInit();
         break;
 }

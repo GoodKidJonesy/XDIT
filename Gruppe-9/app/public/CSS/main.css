@@ -71,6 +71,7 @@ body {
           align-items: center;
   background-color: #344966;
   padding: 20px;
+  width: 100%;
 }
 
 #content-wrap {
@@ -103,6 +104,11 @@ body {
 
 #header-left {
   margin-left: 25px;
+}
+
+#breadcrumb {
+  padding-left: 10px;
+  padding-top: 3px;
 }
 
 .material-icons.md-18 {

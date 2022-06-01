@@ -1,6 +1,5 @@
-/*for all*/
+@import "./colors.scss";
 
-@import "./main.scss";
 .button {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -40,12 +39,12 @@
     background-color: darken($clr-light, 10);
 }
 
-#content {
-    margin-top: 2em;
+#afslut {
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 600px) {
-    /*mobile*/
     #back {
         padding-left: 1rem;
     }
@@ -58,7 +57,7 @@
 }
 
 @media (min-width: 601px) and (max-width: 1000px) {
-    /*tablet*/
+
 }
 
 @media (min-width: 1000px) {

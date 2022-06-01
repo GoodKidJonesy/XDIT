@@ -1,5 +1,156 @@
 @charset "UTF-8";
-/*for all*/
+.color-primary {
+  background-color: #344966;
+}
+
+.color-secondary {
+  background-color: #FFFFFF;
+}
+
+.color-background {
+  background-color: #FFFFFF;
+}
+
+.color-dark {
+  background-color: #040404;
+}
+
+.color-light {
+  background-color: #F0F4EF;
+}
+
+.text-light {
+  color: #F0F4EF;
+}
+
+.text-dark {
+  color: #040404;
+}
+
+.color-primary {
+  background-color: #344966;
+}
+
+.color-secondary {
+  background-color: #FFFFFF;
+}
+
+.color-background {
+  background-color: #FFFFFF;
+}
+
+.color-dark {
+  background-color: #040404;
+}
+
+.color-light {
+  background-color: #F0F4EF;
+}
+
+.text-light {
+  color: #F0F4EF;
+}
+
+.text-dark {
+  color: #040404;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+  max-width: 4px;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #344966;
+  padding: 20px;
+  width: 100%;
+}
+
+#content-wrap {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: calc(100vh - 96px - 296px);
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #344966;
+  padding: 20px;
+  color: #F0F4EF;
+}
+
+#copyright {
+  background-color: #2b3d55;
+}
+
+#header-right {
+  margin-right: 25px;
+}
+
+#header-left {
+  margin-left: 25px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
 #betaling {
   display: -ms-grid;
   display: grid;
@@ -19,10 +170,6 @@
 .card {
   margin-top: 2rem;
   padding-bottom: 1rem;
-}
-
-.card-header {
-  display: inline-block;
 }
 
 #cardicon {
@@ -49,12 +196,20 @@
 }
 
 #bekræft {
-  text-align: right;
   vertical-align: middle;
+  float: right;
 }
 
-#content {
-  margin-top: 2em;
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 600px) {

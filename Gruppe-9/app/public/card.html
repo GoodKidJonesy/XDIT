@@ -10,42 +10,51 @@
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css/forms.css">
 
     <!-- Bootstrap links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Personal links -->
-    <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/colors.css">
 
     <title>XDIT - Kortoplysninger</title>
 </head>
 
-<body class="card">
-    <header>
-        <div id="top" class="navigationbar fullwidth">
-            <nav class="navbar color-primary">
-                <i id="back" class="material-icons material-iconsnav text-light" onclick="location.href='index.html'">keyboard_backspace</i>
-                <a class="navbar-brand text-light" href="#">
-                    <h1 style="margin-top: 0px" class="headerText">XD-IT</h1>
-                </a>
-                <i id="login" class="material-icons material-iconsnav text-light ">account_circle</i>
-            </nav>
+<body class="cardPage">
+    <header id="header">
+        <div id="header-left" class="text-light">
+            <i id="back" class="material-icons material-iconsnav md-48"
+                onclick="location.href='index.html'">keyboard_backspace</i>
+        </div>
+
+        <div class="text-light">
+            <h1>XD-IT</h1>
+        </div>
+
+        <div id="header-right" class="text-light">
+            <i id="login" class="material-icons material-iconsnav md-48">account_circle</i>
         </div>
     </header>
 
-    <div id="content" class="color-background">
-        <div id="breadcrumb">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Forside</a></li>
-                    <li class="breadcrumb-item"><a href="order.html">Bestil en bil</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Betal</li>
-                </ol>
-            </nav>
-        </div>
+    <div id="breadcrumb">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Forside</a></li>
+                <li class="breadcrumb-item"><a href="order.html">Bestil en bil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Betal</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!--main-->
+    <div id="content-wrap">
         <div id="betaling">
             <div class="card color-light">
                 <div class="card-header">
@@ -119,99 +128,66 @@
                         </div>
                     </div>
                     <div id="bekræft">
-                        <button type="button" class="btn color-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <i id="accept" class="material-icons md-36 light-text">done</i><span class="light-text">Bekræft</span>
-          </div>
-
-          </button>
-
+                        <button type="button" class="btn color-primary text-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i id="accept" class="material-icons md-36">done</i><span>Bekræft</span>
                     </div>
-
-                </div>
-
-
-            </div>
-
-
-            <!-- Footer -->
-            <footer class="text-center text-lg-start text-white color-primary fullwidth">
-                <!-- Section: Links  -->
-                <section>
-                    <div class="container text-center text-md-start mt-5">
-                        <!-- Grid row -->
-                        <div class="row mt-3">
-                            <!-- Grid column -->
-                            <div id="linkfoot" class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                                <!-- Content -->
-                                <h6 class="text-uppercase fw-bold">XD-IT</h6>
-                                <p>
-                                    Vi er XD-IT - extra ordinary driving interactive technology. Vi som firma vil gerne give dig den bedste mulige bil-udlejnings oplevelse.
-
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div id="linkfoot" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold">Links</h6>
-                                <p>
-                                    <a href="#!" class="text-white">Forside</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-white">Aktiv Bil</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-white">Hjælp</a>
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-
-
-                            <!-- Grid column -->
-                            <div id="linkfoot" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold">Contact</h6>
-                                <p><i class="fas fa-home mr-3"></i> Rueds Langgade 23, Købehavn S, 2300, Danmark</p>
-                                <p><i class="fas fa-envelope mr-3"></i> xd-it@company.com</p>
-                            </div>
-                            <!-- Grid column -->
-                        </div>
-                        <!-- Grid row -->
-                    </div>
-                </section>
-                <!-- Section: Links  -->
-
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                    © 2022 Copyright:
-                    <a class="text-white" href="https://mdbootstrap.com/">www.XD-IT.com</a>
-                </div>
-                <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
-
-
-            <!-- Pop-Up -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tak for din bestilling!</h5>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            Du kan finde din bil under "Aktiv Bil" siden
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="location.href='index.html'">Ok</button>
-                        </div>
-                    </div>
+                    </button>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <footer id="footer" class="text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align:center;">
+                    <h5 class="text-uppercase">Links</h5>
+                    <p>
+                        <a href="#!" class="text-white">Forside</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Aktiv Bil</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Hjælp</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align:center;">
+                    <h5 class="text-uppercase">Kontakt</h5>
+                    <p><i class="fas fa-home mr-3"></i> Rueds Langgade 23, Købehavn S, 2300, Danmark</p>
+                    <p><i class="fas fa-envelope mr-3"></i> xd-it@company.com</p>
+                </div>
+            </div>
+        </div>
+        <div id="copyright" class="text-center p-3">
+            © 2022 Copyright:
+            <a class="text-light" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">XD-IT.com.</a>
+            All rights reserved.
+        </div>
+    </footer>
 
+    <!-- Pop-Up -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tak for din bestilling!</h5>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Du kan finde din bil under "Aktiv Bil" siden
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="location.href='index.html'">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 <script src="scripts/main.js"></script>
 
 </html>
