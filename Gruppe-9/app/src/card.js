@@ -7,7 +7,7 @@ async function startBooking() {
     await bookCar(car);
     setTimeout(() => {
         location.href = "userpage.html";
-    }, 4000)
+    }, 3000)
 }
 
 
