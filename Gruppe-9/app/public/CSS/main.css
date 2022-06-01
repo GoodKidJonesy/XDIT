@@ -105,7 +105,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 #header-left {
@@ -116,6 +116,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 25px;
+}
+
+#header {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #breadcrumb {

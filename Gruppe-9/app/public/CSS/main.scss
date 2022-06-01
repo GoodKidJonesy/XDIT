@@ -67,13 +67,17 @@ body {
 #header-right {
     display: flex;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 5px;
 }
 
 #header-left {
     display: flex;
     align-items: center;
     margin-left: 25px;
+}
+
+#header {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #breadcrumb {

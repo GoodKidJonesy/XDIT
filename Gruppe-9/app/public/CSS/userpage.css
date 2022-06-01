@@ -93,10 +93,10 @@
 
 @media (max-width: 600px) {
   #back {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
   #login {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
   }
   #content {
     margin-bottom: 18em;
