@@ -24,18 +24,22 @@
 </head>
 
 <body class="order">
-    <header>
-        <div id="top" class="navigationbar fullwidth">
-            <nav class="navbar color-primary">
-                <i id="back" class="material-icons material-iconsnav text-light" onclick="location.href='index.html'">keyboard_backspace</i>
-                <a class="navbar-brand text-light" href="#">
-                    <h1 onclick="location.href='index.html'">XD-IT</h1>
-                </a>
-                <i id="login" class="material-icons material-iconsnav text-light ">account_circle</i>
-            </nav>
+    <header id="header">
+        <div id="header-left" class="text-light">
+            <i id="back" class="material-icons material-iconsnav md-48"
+                onclick="location.href='index.html'">keyboard_backspace</i>
+        </div>
 
+        <div class="text-light">
+            <h1>XD-IT</h1>
+        </div>
+
+        <div id="header-right" class="text-light">
+            <i id="login" class="material-icons material-iconsnav md-48">account_circle</i>
         </div>
     </header>
+
+
     <div id="breadcrumb">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -44,21 +48,27 @@
             </ol>
         </nav>
     </div>
+     <!--main-->
+
+    
     <div id="title">
         <h1>Biler i nærheden</h1>
     </div>
 
-    <div id="content">
+    <div id="content-wrap">
         <!--https://getbootstrap.com/docs/4.0/components/carousel/-->
         <div id="carCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-            <ol class="carousel-indicators">
-                <!--
-                <li data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carCarousel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carCarousel" data-bs-slide-to="2"></li>
-                -->
-            </ol>
+            
             <div class="carousel-inner">
+                <div>
+                    <ol class="carousel-indicators">
+                        <!--
+                        <li data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carCarousel" data-bs-slide-to="2"></li>
+                        -->
+                    </ol>
+                </div>
                 <!--
                 <div class="carousel-item active">
                     <div class="card">
@@ -107,71 +117,41 @@
             <a class="carousel-control-next" href="#carCarousel" role="button" data-bs-slide="next">
                 <button type="button" class="button btn color-primary text-light btn-lg"><i class="material-icons">arrow_forward_ios</i></button>
             </a>
+           
         </div>
         <div id="mapContainer">
             <iframe src="https://www.google.com/maps/d/embed?mid=1GJ06Vz3np9prVZ_FoR5lI6ojQvjJBdk&ehbc=2E312F" width="100%" height="100%"></iframe>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start text-white color-primary fullwidth">
-        <!-- Section: Links  -->
-        <section>
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div id="linkfoot" class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold">XD-IT</h6>
-                        <p>
-                            Vi er XD-IT - Extraordinary Driving Interactive Technology. Vi som firma vil gerne dig den bedst mulige bil-udlejning oplevelse. Vi har el-bil lavandøre såsom BMW, Audi, Kia og Mercedes.
-
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div id="linkfoot" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold">Links</h6>
-                        <p>
-                            <a href="#!" class="text-white">Forside</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-white">Aktiv Bil</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-white">Hjælp</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-
-
-                    <!-- Grid column -->
-                    <div id="linkfoot" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold">Contact</h6>
-                        <p><i class="fas fa-home mr-3"></i> Rueds Langgade 23, Købehavn S, 2300, Danmark</p>
-                        <p><i class="fas fa-envelope mr-3"></i> xd-it@company.com</p>
-                    </div>
-                    <!-- Grid column -->
+    <footer id="footer" class="text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align:center;">
+                    <h5 class="text-uppercase">Links</h5>
+                    <p>
+                        <a href="index.html" class="text-white">Forside</a>
+                    </p>
+                    <p>
+                        <a href="userpage.html" class="text-white">Aktiv Bil</a>
+                    </p>
+                    <p>
+                        <a href="help.html" class="text-white">Hjælp</a>
+                    </p>
                 </div>
-                <!-- Grid row -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align:center;">
+                    <h5 class="text-uppercase">Kontakt</h5>
+                    <p><i class="fas fa-home mr-3"></i> Rueds Langgade 23, Købehavn S, 2300, Danmark</p>
+                    <p><i class="fas fa-envelope mr-3"></i> xd-it@company.com</p>
+                </div>
             </div>
-        </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        </div>
+        <div id="copyright" class="text-center p-3">
             © 2022 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">www.XD-IT.com</a
-      >
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+            <a class="text-light" href="index.html">XD-IT.com.</a>
+            All rights reserved.
+        </div>
+    </footer>
     
 </body>
 <script src="scripts/main.js"></script>

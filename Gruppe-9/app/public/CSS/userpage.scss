@@ -6,6 +6,10 @@
     margin-bottom: 1rem;
 }
 
+.material-iconsnav{
+    
+}
+
 #minebiler {
     display: grid;
     justify-content: center;
@@ -48,6 +52,7 @@
 
 #breadcrumb {
     margin-top: 0.5rem;
+    margin-left: 1rem;
 }
 
 #content {
@@ -69,9 +74,24 @@
 
 @media (min-width: 601px) and (max-width: 1000px) {
     /*tablet*/
+    #back {
+        margin-left: 1.5rem;
+    }
+
+    #login {
+        margin-right: 1.5rem;
+    }
 }
 
 @media (min-width: 1000px) {
+    #back {
+        margin-left: 2rem;
+    }
+
+    #login {
+        margin-right: 2rem;
+    }
+
     #content {
         margin-bottom: 5em;
     }

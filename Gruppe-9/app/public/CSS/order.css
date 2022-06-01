@@ -9,6 +9,7 @@ body {
 
 #breadcrumb {
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 #title {
@@ -46,6 +47,10 @@ body {
   background-color: white;
 }
 
+.carousel-item {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 600px) {
   /*mobile*/
   #mapContainer {
@@ -62,7 +67,7 @@ body {
   }
 }
 
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 601px) and (max-width: 1294px) {
   /*tablet*/
   #mapContainer {
     display: -webkit-box;
@@ -79,9 +84,12 @@ body {
   #content {
     margin-bottom: 21em;
   }
+  #breadcrumb {
+    margin-left: 1.5rem;
+  }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1295px) {
   /*pc*/
   #mapContainer {
     display: -webkit-box;
@@ -92,6 +100,7 @@ body {
             justify-content: center;
     width: 60%;
     height: 500px;
+    padding-left: 10%;
   }
   #carCarousel {
     margin: 20px 0 0 50px;
@@ -110,6 +119,10 @@ body {
         -ms-flex-pack: left;
             justify-content: left;
     margin-bottom: 15em;
+    padding-left: 30%;
+  }
+  #breadcrumb {
+    margin-left: 2rem;
   }
 }
 /*# sourceMappingURL=order.css.map */
