@@ -1,4 +1,5 @@
 @import "./colors.scss";
+
 $header-height: 96px;
 $footer-height: 296px;
 
@@ -28,6 +29,10 @@ $footer-height: 296px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
 }
 
 #header {
