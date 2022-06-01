@@ -58,7 +58,7 @@
 
     <!--main-->
     <div id="content-wrap">
-        <div id="betaling">
+        <div id="betaling" class="was-validated">
             <div class="card color-light">
                 <div class="card-header">
                     <i id="cardicon" class="material-icons">credit_card</i>
@@ -69,18 +69,18 @@
                     <h6 class="card-subtitle mb-2 text-muted text">Indtast dine kortoplysning</h6>
                     <div id="fornavn">
                         <label class="text">Fornavn</label>
-                        <input type="text" class="form-control" placeholder="Fornavn">
+                        <input type="text" class="form-control" placeholder="Fornavn" required>
                     </div>
                     <div id="efternavn">
                         <form>
                             <div class="row">
                                 <div class="col">
                                     <label class="text">Mellemnavn</label>
-                                    <input type="text" class="form-control" placeholder="Mellemnavn">
+                                    <input type="text" class="form-control" placeholder="Mellemnavn" required>
                                 </div>
                                 <div class="col">
                                     <label class="text">Efternavn</label>
-                                    <input type="text" class="form-control" placeholder="Efternavn">
+                                    <input type="text" class="form-control" placeholder="Efternavn" required>
                                 </div>
                             </div>
                         </form>
@@ -89,33 +89,51 @@
                         <label class="text">Email adresse</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <span class="input-group-text material-icons" id="basic-addon1">mail</span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Email adresse">
+                            <input type="text" class="form-control" placeholder="Email adresse" required>
                         </div>
                     </div>
                     <div id="address">
                         <label class="text">Adresse</label>
-                        <input type="text" class="form-control" placeholder="Adresse">
+                        <input type="text" class="form-control" placeholder="Adresse" required>
                     </div>
                     <div id="cardname">
                         <label class="text">Navn på kort</label>
-                        <input type="text" class="form-control" placeholder="Navn på kort">
+                        <input type="text" class="form-control" placeholder="Navn på kort" required> 
                     </div>
                     <div id="cardnumber">
                         <label class="text">Kortnummer</label>
-                        <input type="password" class="form-control" placeholder="Kortnummer">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text material-icons" id="basic-addon1">credit_card</span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Kortnummer" required>
+                        </div>
+                    
                     </div>
                     <div id="cardinfo">
                         <form>
                             <div class="row">
                                 <div class="col">
                                     <label class="text">Udløbs-dato</label>
-                                    <input type="text" class="form-control" placeholder="Udløbs-dato">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text material-icons" id="basic-addon1">calendar_month</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Udløbs-dato" required>
+                                    </div>
+                                    
+                                    
                                 </div>
                                 <div class="col">
                                     <label class="text">CVV</label>
-                                    <input type="text" class="form-control" placeholder="CVV">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text material-icons" id="basic-addon1">lock</span>
+                                        </div>
+                                    <input type="text" class="form-control" placeholder="CVV" required>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -125,9 +143,9 @@
                             <h6 class="card-subtitle mb-2 text-muted text2">Beløb:</h6>
                             <p class="card-text text2">0.00 kr.</p>
                         </div>
-                        <div id="checkbox" class="text">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Accepter du købsbetingelserne</label>
+                        <div id="checkbox" class="text form-check">
+                            <input class="form-check-input" type="checkbox"  id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1 invalidCheck">Accepter købsbetingelserne</label>
                         </div>
                     </div>
                     <div id="bekræft">
@@ -192,5 +210,6 @@
 </body>
 
 <script src="scripts/main.js"></script>
+<script src="../src/card.js"></script>
 
 </html>
