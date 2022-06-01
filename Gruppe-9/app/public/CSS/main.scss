@@ -65,11 +65,16 @@ body {
 }
 
 #header-right {
+    display: flex;
+    align-items: center;
     margin-right: 25px;
 }
 
 #header-left {
+    display: flex;
+    align-items: center;
     margin-left: 25px;
+    margin-right: 79px;
 }
 
 #breadcrumb {
@@ -95,6 +100,11 @@ body {
 
 #user {
     display: flex;
+}
+
+#user-pic {
+    border-radius: 50%;
+    margin: 2px;
 }
 
 @media (max-width: 600px) {
