@@ -3,6 +3,8 @@ import { endBooking, getBooking, hasActiveCar } from "./fireFunctions";
 
 var endButton = document.getElementById("betal");
 var title = document.querySelector("#minebilertekst h1");
+var bookingTime;
+var bookingPrice;
 const timer = document.createElement("p");
 const bill = document.createElement("p");
 
@@ -13,6 +15,8 @@ async function endAndPay() {
 
 async function showCar() {
     const booking = await getBooking();
+    bookingTime = booking.time.toDate().getTime();
+    bookingPrice = booking.price;
     const box = document.getElementById("aktivbil");
     const card = document.createElement("div");
     card.classList.add("card");
@@ -27,13 +31,13 @@ async function showCar() {
     img.classList.add("card-img-top");
     img.src = "images/" + booking.model + ".jpg";
     img.alt = booking.model;
-    card.appendChild("img");
+    card.appendChild(img);
 
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
     const location = document.createElement("div");
     location.id = "location";
-    
+
     const hv = document.createElement("h6");
     hv.classList.add("card-text");
     hv.innerHTML = "Hentes ved:";
@@ -56,7 +60,7 @@ async function showCar() {
     cardBody.appendChild(time);
 
     const price = document.createElement("div");
-    price.id = "price";
+    bill.classList.add("card-text");
     price.appendChild(bill);
     cardBody.appendChild(price);
     card.appendChild(cardBody);
@@ -65,8 +69,10 @@ async function showCar() {
 
 async function update() {
     if (await hasActiveCar()) {
-        endButton.addEventListener('click', endAndPay);
-
+        let x;
+        endButton.addEventListener('click', () => { clearInterval(x); endAndPay(); });
+        await showCar();
+        x = setInterval(taketime, 1000);
     } else {
         endButton.innerHTML = "Find biler";
         endButton.addEventListener('click', () => location.href = "order.html");
@@ -77,32 +83,24 @@ async function update() {
 //https://www.w3schools.com/howto/howto_js_countdown.asp
 function taketime() {
     var now = new Date().getTime();
-  
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-  
-    // Time calculations for days, hours, minutes and seconds
+
+    var distance = now - bookingTime;
+
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-    // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-  
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }
+
+
+    timer.innerHTML = days + "d " + hours + "t "
+        + minutes + "m " + seconds + "s ";
+    bill.innerHTML = Math.round(Math.floor(distance / 600) * bookingPrice) / 100 + "kr.";
+}
 
 function userpageInit() {
     setTimeout(() => {
         update();
     }, 1000);
-    let x = 2;
 }
 
 export { userpageInit };
