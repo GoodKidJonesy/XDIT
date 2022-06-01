@@ -1,5 +1,4 @@
-import { async } from "@firebase/util";
-import { endBooking, getBooking, hasActiveCar } from "./fireFunctions";
+import { endBooking, getBooking, hasActiveCar, isUserSignedIn, signIn } from "./fireFunctions";
 
 var endButton = document.getElementById("betal");
 var title = document.querySelector("#minebilertekst h1");
@@ -61,6 +60,7 @@ async function showCar() {
 
     const price = document.createElement("div");
     bill.classList.add("card-text");
+    price.id = "price";
     price.appendChild(bill);
     cardBody.appendChild(price);
     card.appendChild(cardBody);
@@ -68,6 +68,13 @@ async function showCar() {
 }
 
 async function update() {
+    if (!isUserSignedIn()) {
+        try {
+            await signIn();
+        } catch(e) {
+            location.href = "index.html";
+        }
+    }
     if (await hasActiveCar()) {
         let x;
         endButton.addEventListener('click', () => { clearInterval(x); endAndPay(); });
@@ -76,7 +83,7 @@ async function update() {
     } else {
         endButton.innerHTML = "Find biler";
         endButton.addEventListener('click', () => location.href = "order.html");
-        title.innerHTML = "Du har ingen aktive biler";
+        title.innerHTML = "Du har ikke booket nogen biler";
     }
 }
 

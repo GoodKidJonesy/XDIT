@@ -49,6 +49,7 @@ export async function signIn() {
 // Firebase sign-out.
 export function signOutUser() {
     signOut(getAuth());
+    location.href = "index.html";
 }
 
 // Initiate firebase auth
