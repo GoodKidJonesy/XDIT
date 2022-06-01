@@ -37,6 +37,7 @@ import {
     getDocs,
     serverTimestamp,
     limitToLast,
+    Query,
 } from 'firebase/firestore';
 
 // Firebase sign-in.
@@ -117,7 +118,7 @@ function authStateObserver(user) {
         signOutButtonElement.setAttribute('hidden', 'true');
         signInButtonElement.removeAttribute('hidden');
 
-        // Show sign-in button.
+        //Show sign-in button.
         defaultPicElement.removeAttribute('hidden');
         signInButtonElement.removeAttribute('hidden');
     }
@@ -144,17 +145,18 @@ function authStateObserver(user) {
         } catch (err) { console.log(err); }
     }
 
-    export function getBookedCar() {
-        let order;
-        const querySnapshot = query(collection(getFirestore(), getAuth().currentUser.email + "booking"), orderBy('time', 'desc'), limit(1));
+    export async function getBooking() {
+        let order = undefined;
+        const querySnapshot = await getDocs(collection(getFirestore(), getAuth().currentUser.email + "booking"));
         querySnapshot.forEach((doc) => {
-            order = doc;
-        });
+            if (order == undefined || order.time < doc.data().time) order = doc.data();
+        }); //get latest booking
         return order;
     }
-
-    export function hasActiveCar() {
-        return !(getBookedCar().model === "none");
+    
+    export async function hasActiveCar() {
+        if ((await getBooking()) == undefined) return false;
+        return (await getBooking()).model != "none";
     }
 
     export async function getCars() {
@@ -174,5 +176,5 @@ var userNameElement = document.getElementById('user-name');
 var signInButtonElement = document.getElementById('sign-in');
 var signOutButtonElement = document.getElementById('sign-out');
 
-signOutButtonElement.addEventListener('click', signOutUser);
-signInButtonElement.addEventListener('click', signIn);
+//signOutButtonElement.addEventListener('click', signOutUser);
+//signInButtonElement.addEventListener('click', signIn);

@@ -73,7 +73,7 @@ body {
     }
 }
 
-@media (min-width: 601px) and (max-width: 1294px) {
+@media (min-width: 601px) and (max-width: 999px) {
     /*tablet*/
     #mapContainer {
         display: flex;
@@ -92,7 +92,7 @@ body {
 }
 
 
-@media (min-width: 1295px) {
+@media (min-width: 1000px) {
     /*pc*/
     #mapContainer {
         display: flex;
