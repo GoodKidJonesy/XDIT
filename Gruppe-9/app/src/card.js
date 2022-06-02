@@ -5,13 +5,7 @@ const accept = document.getElementById('submit');
 
 function startBooking() {
 
-    console.log('clicked');
     updatePopup(valid());
-
-    for (let i = 0; i < values().length; i++) {
-        console.log(values([i]));
-    }
-    console.log(document.getElementById('exampleCheck1').checked);
 
     if (valid() === true) {
         bookACar();
