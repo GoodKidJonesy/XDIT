@@ -1,23 +1,23 @@
 @import "./colors.scss";
 @import "./main.scss";
-#faq {
+.faq {
     margin-top: 1em;
     overflow: hidden;
     border-radius: 15px;
     outline: 3px solid $clr-dark;
 }
 
-#q {
+.q {
     background-color: $clr-primary;
     color: $clr-light;
 }
 
-#a {
+.a {
     background-color: darken($clr-light, 5);
 }
 
-#a,
-#q p {
+.a,
+.q p {
     margin: 0px;
     padding: 5px;
 }
