@@ -1,26 +1,24 @@
 @import "./colors.scss";
 @import "./main.scss";
-
 #faq {
-    border: 3px solid;
     margin-top: 1em;
+    overflow: hidden;
     border-radius: 15px;
+    outline: 3px solid $clr-dark;
 }
 
 #q {
     background-color: $clr-primary;
     color: $clr-light;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 #a {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-color: darken($clr-light, 5);
 }
 
-#a,#q p {
-    margin:0px;
+#a,
+#q p {
+    margin: 0px;
     padding: 5px;
 }
 
