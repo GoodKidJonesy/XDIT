@@ -74,7 +74,7 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title"></h5>
-                    <h6 class="card-subtitle mb-2 text-muted text">Indtast dine kortoplysning</h6>
+                    <h6 class="card-subtitle mb-2 text-muted text">Indtast dine kortoplysninger</h6>
                     <div id="fornavn">
                         <label class="text">Fornavn</label>
                         <input type="text" class="form-control" placeholder="Fornavn" required>
@@ -100,6 +100,15 @@
                                 <span class="input-group-text material-icons" id="basic-addon1">mail</span>
                             </div>
                             <input type="text" class="form-control" placeholder="Email adresse" required>
+                        </div>
+                    </div>
+                    <div id="kørekortnummer">
+                        <label class="text">Kørekortnummer</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text material-icons" id="basic-addon1">directions_car</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="kørekortnummer" required>
                         </div>
                     </div>
                     <div id="address">
@@ -147,10 +156,6 @@
                         </form>
                     </div>
                     <div id="checkbeløb">
-                        <div id="beløb">
-                            <h6 class="card-subtitle mb-2 text-muted text2">Beløb:</h6>
-                            <p class="card-text text2">0.00 kr.</p>
-                        </div>
                         <div id="checkbox" class="text form-check">
                             <input class="form-check-input" type="checkbox"  id="exampleCheck1" required>
                             <label class="form-check-label" for="exampleCheck1 invalidCheck">Accepter købsbetingelserne</label>
