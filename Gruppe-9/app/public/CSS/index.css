@@ -224,6 +224,7 @@ h2 {
 }
 
 button {
+  margin: -10px;
   width: 70%;
   background-color: #344966 !important;
   border-color: #040404 !important;

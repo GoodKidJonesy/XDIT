@@ -151,5 +151,8 @@ body {
     height: 28vh;
     width: 25vw;
   }
+  #undertitle {
+    display: none;
+  }
 }
 /*# sourceMappingURL=order.css.map */
