@@ -27,7 +27,7 @@
     <header id="header">
         <div id="header-left" class="text-light">
             <a role="button"><i id="back" class="material-icons material-iconsnav md-48"
-                onclick="location.href='index.html'">keyboard_backspace</i></a>
+                    onclick="location.href='index.html'">keyboard_backspace</i></a>
         </div>
 
         <div class="text-light">
@@ -38,16 +38,17 @@
 
         <div id="header-right">
 
-            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i id="def-pic" class="material-icons material-iconsnav text-light md-48" referrerpolicy="no-referrer">account_circle</i>
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i id="def-pic" class="material-icons material-iconsnav text-light md-48">account_circle</i>
             </a>
-            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <image id="user-pic" style="max-height: 48px;" hidden></image>
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="user-pic" alt="Profile picture" style="max-height: 48px;" src="images/favicon-32x32.png" hidden
+                    referrerpolicy="no-referrer">
             </a>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#" id="sign-in" class="btn text-dark">Log ind</a>
-                <a class="dropdown-item" href="#" id="sign-out" class="btn text-dark" style="padding-top:0;">Log ud</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item btn text-dark" href="#" id="sign-in">Log ind</a>
+                <a class="dropdown-item btn text-dark" href="#" id="sign-out" style="padding-top:0;">Log ud</a>
             </div>
         </div>
     </header>
@@ -95,7 +96,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align:center;">
                     <h5 class="text-uppercase">Kontakt</h5>
-                    <p><i class="fas fa-home mr-3"></i> Rued Langgaards Vej 7, København S, 2300, Danmark</p>
+                    <p><i class="fas fa-home mr-3"></i> Rueds Langgade 23, Købehavn S, 2300, Danmark</p>
                     <p><i class="fas fa-envelope mr-3"></i> xd-it@company.com</p>
                 </div>
             </div>
@@ -105,8 +106,7 @@
             <a class="text-light" href="index.html">XD-IT.com.</a> All rights reserved.
         </div>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
-
-<script src="scripts/main.js"></script>
 
 </html>

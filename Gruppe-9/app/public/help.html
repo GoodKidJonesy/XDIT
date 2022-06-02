@@ -27,7 +27,7 @@
     <header id="header">
         <div id="header-left" class="text-light">
             <a role="button"><i id="back" class="material-icons material-iconsnav md-48"
-                onclick="location.href='index.html'">keyboard_backspace</i></a>
+                    onclick="location.href='index.html'">keyboard_backspace</i></a>
         </div>
 
         <div class="text-light">
@@ -38,16 +38,17 @@
 
         <div id="header-right">
 
-            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i id="def-pic" class="material-icons material-iconsnav text-light md-48" referrerpolicy="no-referrer">account_circle</i>
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i id="def-pic" class="material-icons material-iconsnav text-light md-48">account_circle</i>
             </a>
-            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <image id="user-pic" style="max-height: 48px;" hidden></image>
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="user-pic" alt="Profile picture" style="max-height: 48px;" src="images/favicon-32x32.png" hidden
+                    referrerpolicy="no-referrer">
             </a>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#" id="sign-in" class="btn text-dark">Log ind</a>
-                <a class="dropdown-item" href="#" id="sign-out" class="btn text-dark" style="padding-top:0;">Log ud</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item btn text-dark" href="#" id="sign-in">Log ind</a>
+                <a class="dropdown-item btn text-dark" href="#" id="sign-out" style="padding-top:0;">Log ud</a>
             </div>
         </div>
     </header>
@@ -63,28 +64,32 @@
 
     <!--main-->
     <div id="content-wrap">
-        <div id="faq">
-            <div id="q">
+        <div class="faq">
+            <div class="q">
                 <p>Hvordan booker jeg en bil?</p>
             </div>
-            <div id="a">
-                <p>Biler bookes på siden "Find Biler".</p>
+            <div class="a">
+                <p>Biler bookes på siden "Find Biler". <br>
+                    De er sorteret så de nærmeste biler vises først. Du kan også se deres lokation på kortet.
+                </p>
             </div>
         </div>
-        <div id="faq">
-            <div id="q">
+        <div class="faq">
+            <div class="q">
                 <p>Hvor meget koster det at leje biler?</p>
             </div>
-            <div id="a">
-                <p>Det koster xx.xx kr. per minute du lejer bilen.</p>
+            <div class="a">
+                <p>Du kan se prisen på bilerne på "Book en bil" siden.<br>
+                    Det koster et fast beløb per minut du bruger bilen.<br>
+                    Det samlede beløb finder du på "Afslut booking" siden, hvis du er i gang med at bruge en bil.</p>
             </div>
         </div>
-        <div id="faq">
-            <div id="q">
+        <div class="faq">
+            <div class="q">
                 <p>Hvordan betaler jeg?</p>
             </div>
-            <div id="a">
-                <p>Når du booker en bil indtaster du dine kort-oplysninger. Når du så afslutter udlejningen vil beløbet automatisk blive trukket fra dit kort</p>
+            <div class="a">
+                <p>Når du booker en bil indtaster du dine kortoplysninger. Når du så afslutter udlejningen, vil beløbet automatisk blive trukket fra dit kort</p>
             </div>
         </div>
     </div>
@@ -95,18 +100,18 @@
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align:center;">
                     <h5 class="text-uppercase">Links</h5>
                     <p>
-                        <a href="#!" class="text-white">Forside</a>
+                        <a href="index.html" class="text-white">Forside</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Afslut booking</a>
+                        <a href="userpage.html" class="text-white">Afslut booking</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Hjælp</a>
+                        <a href="help.html" class="text-white">Hjælp</a>
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align:center;">
                     <h5 class="text-uppercase">Kontakt</h5>
-                    <p><i class="fas fa-home mr-3"></i> Rued Langgaards Vej 7, København S, 2300, Danmark</p>
+                    <p><i class="fas fa-home mr-3"></i> Rueds Langgade 23, Købehavn S, 2300, Danmark</p>
                     <p><i class="fas fa-envelope mr-3"></i> xd-it@company.com</p>
                 </div>
             </div>
@@ -116,8 +121,7 @@
             <a class="text-light" href="index.html">XD-IT.com.</a> All rights reserved.
         </div>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
-
-<script src="scripts/main.js"></script>
 
 </html>
