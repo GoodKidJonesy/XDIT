@@ -6,11 +6,6 @@ body {
     justify-content: center;
 }
 
-#breadcrumb {
-    margin-top: 1rem;
-    margin-left: 1rem;
-}
-
 #title {
     margin-bottom: 2rem;
 }
@@ -53,7 +48,7 @@ body {
     background-color: white;
 }
 
-.carousel-item{
+.carousel-item {
     margin-bottom: 1rem;
 }
 
@@ -90,7 +85,6 @@ body {
         width: 60vw;
     }
 }
-
 
 @media (min-width: 1000px) {
     /*pc*/
