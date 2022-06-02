@@ -90,7 +90,11 @@ function insertCars(cars) {
 
 async function attemptBooking(car) {
     if (!isUserSignedIn()) {
-        await signIn();
+        try {
+            await signIn();
+        } catch(e) {
+            alert("Du skal logge ind for at booke en bil. Dette kan gøres øverst i højre hjørne.");
+        }
     }
     if (await hasActiveCar()) {
         alert('Du kan kun booke én bil ad gangen. \nAfslut din nuværende booking på "Aktiv Bil" siden.');

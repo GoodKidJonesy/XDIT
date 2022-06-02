@@ -106,7 +106,7 @@ body {
   width: 90vw;
   margin: 0 auto;
   padding-bottom: 30px;
-  min-height: calc(100vh - 96px - 296px);
+  min-height: calc(100vh - 96px);
 }
 
 #footer {
@@ -190,24 +190,23 @@ body {
 }
 
 #faq {
-  border: 3px solid;
   margin-top: 1em;
+  overflow: hidden;
   border-radius: 15px;
+  outline: 3px solid #040404;
 }
 
 #q {
   background-color: #344966;
   color: #F0F4EF;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 #a {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background-color: #e2eae0;
 }
 
-#a, #q p {
+#a,
+#q p {
   margin: 0px;
   padding: 5px;
 }

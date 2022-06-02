@@ -49,7 +49,9 @@ export async function signIn() {
 // Firebase sign-out.
 export function signOutUser() {
     signOut(getAuth());
-    location.href = "index.html";
+    if (document.body.className != "help" && document.body.className != "order" && document.className != "index") {
+        location.href = "index.html";
+    }
 }
 
 // Initiate firebase auth
@@ -124,53 +126,53 @@ function authStateObserver(user) {
         signInButtonElement.removeAttribute('hidden');
     }
 }
-    export async function bookCar(car) {
-        try {
-            await addDoc(collection(getFirestore(), getAuth().currentUser.email + "booking"), {
-                model: car.model,
-                time: serverTimestamp(),
-                price: car.price,
-                location: car.location
-            });
-            console.log("Car successfully booked");
-        } catch (err) { console.log(err); }
-    }
-
-    export async function endBooking() {
-        try {
-            await addDoc(collection(getFirestore(), getAuth().currentUser.email + "booking"), {
-                model: "none",
-                time: serverTimestamp(),
-            });
-            console.log("Car unbooked");
-        } catch (err) { console.log(err); }
-    }
-
-    export async function getBooking() {
-        let order = undefined;
-        const querySnapshot = await getDocs(collection(getFirestore(), getAuth().currentUser.email + "booking"));
-        querySnapshot.forEach((doc) => {
-            if (order == undefined || order.time < doc.data().time) order = doc.data();
-        }); //get latest booking
-        return order;
-    }
-    
-    export async function hasActiveCar() {
-        if ((await getBooking()) == undefined) return false;
-        return (await getBooking()).model != "none";
-    }
-
-    export async function getCars() {
-        let cars = [];
-        const querySnapshot = await getDocs(collection(getFirestore(), "cars"));
-        querySnapshot.forEach((doc) => {
-            cars.push(doc.data());
+export async function bookCar(car) {
+    try {
+        await addDoc(collection(getFirestore(), getAuth().currentUser.email + "booking"), {
+            model: car.model,
+            time: serverTimestamp(),
+            price: car.price,
+            location: car.location
         });
-        return cars;
-    }
+        console.log("Car successfully booked");
+    } catch (err) { console.log(err); }
+}
+
+export async function endBooking() {
+    try {
+        await addDoc(collection(getFirestore(), getAuth().currentUser.email + "booking"), {
+            model: "none",
+            time: serverTimestamp(),
+        });
+        console.log("Car unbooked");
+    } catch (err) { console.log(err); }
+}
+
+export async function getBooking() {
+    let order = undefined;
+    const querySnapshot = await getDocs(collection(getFirestore(), getAuth().currentUser.email + "booking"));
+    querySnapshot.forEach((doc) => {
+        if (order == undefined || order.time < doc.data().time) order = doc.data();
+    }); //get latest booking
+    return order;
+}
+
+export async function hasActiveCar() {
+    if ((await getBooking()) == undefined) return false;
+    return (await getBooking()).model != "none";
+}
+
+export async function getCars() {
+    let cars = [];
+    const querySnapshot = await getDocs(collection(getFirestore(), "cars"));
+    querySnapshot.forEach((doc) => {
+        cars.push(doc.data());
+    });
+    return cars;
+}
 
 
-  // Shortcuts to DOM Elements.
+// Shortcuts to DOM Elements.
 var userPicElement = document.getElementById('user-pic');
 var defaultPicElement = document.getElementById('def-pic');
 var userNameElement = document.getElementById('user-name');

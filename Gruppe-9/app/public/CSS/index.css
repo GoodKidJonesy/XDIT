@@ -106,7 +106,7 @@ body {
   width: 90vw;
   margin: 0 auto;
   padding-bottom: 30px;
-  min-height: calc(100vh - 96px - 296px);
+  min-height: calc(100vh - 96px);
 }
 
 #footer {
@@ -227,5 +227,9 @@ button {
   width: 70%;
   background-color: #344966 !important;
   border-color: #040404 !important;
+}
+
+#header-left {
+  margin-right: 48px;
 }
 /*# sourceMappingURL=index.css.map */
