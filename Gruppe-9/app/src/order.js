@@ -86,6 +86,8 @@ function insertCars(cars) {
         item.appendChild(card);
         items.appendChild(item);
     }
+    const title = document.querySelector("#title h1");
+    title.innerHTML = "Biler i nærheden"
 }
 
 async function attemptBooking(car) {
