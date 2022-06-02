@@ -44,12 +44,13 @@ import {
 export async function signIn() {
     var provider = new GoogleAuthProvider();
     await signInWithPopup(getAuth(), provider);
+    location.reload();
 }
 
 // Firebase sign-out.
 export function signOutUser() {
     signOut(getAuth());
-    if (document.body.className != "help" && document.body.className != "order" && document.className != "index") {
+    if (document.body.className != "help" && document.body.className != "order") {
         location.href = "index.html";
     }
 }
