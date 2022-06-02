@@ -107,6 +107,7 @@ function taketime() {
 
     timer.innerHTML = days + "d " + hours + "t "
         + minutes + "m " + seconds + "s ";
+    //number of minutes * booking price rounded to two decimals
     bill.innerHTML = Math.round(Math.floor(distance / 600) * bookingPrice) / 100 + "kr.";
 }
 
