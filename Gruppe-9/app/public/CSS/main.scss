@@ -63,10 +63,9 @@ body {
 }
 
 #footer {
-    display: flex;
-    flex-direction: column;
     background-color: $clr-primary;
-    padding: 20px;
+    padding: 0;
+    padding-top: 20px;
     color: $clr-light;
 }
 
