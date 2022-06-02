@@ -33,6 +33,21 @@ body {
   background-color: black;
 }
 
+#carCarousel a {
+  text-decoration: none;
+}
+
+#carCarousel * i {
+  background-color: #8999af;
+  padding: 15px 25px 15px 25px;
+  border-radius: 15px;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
 .carousel-item .card img {
   height: 15vh;
   width: 60vw;
