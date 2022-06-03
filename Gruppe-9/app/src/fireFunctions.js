@@ -159,8 +159,9 @@ export async function getBooking() {
 }
 
 export async function hasActiveCar() {
-    if ((await getBooking()) == undefined) return false;
-    return (await getBooking()).model != "none";
+    let booking = (await getBooking());
+    if (booking == undefined) return false;
+    return booking.model != "none";
 }
 
 export async function getCars() {
