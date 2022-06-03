@@ -7,7 +7,7 @@
 }
 
 .color-background {
-  background-color: #F1F1F1;
+  background-color: #FFFFFF;
 }
 
 .color-dark {
@@ -85,29 +85,5 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (max-width: 600px) {
-  #back {
-    padding-left: 0.5rem;
-  }
-  #login {
-    padding-right: 0.5rem;
-  }
-  #content {
-    margin-bottom: 18em;
-  }
-}
-
-@media (min-width: 1000px) {
-  #back {
-    margin-left: 2rem;
-  }
-  #login {
-    margin-right: 2rem;
-  }
-  #content {
-    margin-bottom: 5em;
-  }
 }
 /*# sourceMappingURL=userpage.css.map */

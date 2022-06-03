@@ -1,4 +1,5 @@
 @import "./colors.scss";
+
 .button {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -51,28 +52,8 @@
     justify-content: center;
 }
 
-@media (max-width: 600px) {
-    #back {
-        padding-left: 0.5rem;
-    }
-    #login {
-        padding-right: 0.5rem;
-    }
-    #content {
-        margin-bottom: 18em;
-    }
-}
+@media (max-width: 600px) {}
 
 @media (min-width: 601px) and (max-width: 1000px) {}
 
-@media (min-width: 1000px) {
-    #back {
-        margin-left: 2rem;
-    }
-    #login {
-        margin-right: 2rem;
-    }
-    #content {
-        margin-bottom: 5em;
-    }
-}
+@media (min-width: 1000px) {}

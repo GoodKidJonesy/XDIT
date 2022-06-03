@@ -135,7 +135,6 @@ export async function bookCar(car) {
             price: car.price,
             location: car.location
         });
-        console.log("Car successfully booked");
     } catch (err) { console.log(err); }
 }
 
@@ -145,7 +144,6 @@ export async function endBooking() {
             model: "none",
             time: serverTimestamp(),
         });
-        console.log("Car unbooked");
     } catch (err) { console.log(err); }
 }
 
