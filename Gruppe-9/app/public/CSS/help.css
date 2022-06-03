@@ -152,6 +152,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 5px;
+  height: 48px;
 }
 
 #header {
@@ -188,7 +189,6 @@ body {
 
 #user-pic {
   border-radius: 50%;
-  margin: 2px;
 }
 
 .dropdown-menu {
@@ -197,11 +197,25 @@ body {
   background-color: #FFFFFF !important;
 }
 
+#content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .faq {
   margin-top: 1em;
   overflow: hidden;
   border-radius: 15px;
   outline: 3px solid #040404;
+  width: 100%;
 }
 
 .q {
@@ -222,5 +236,17 @@ body {
 #breadcrumb {
   margin-top: 0.5rem;
   margin-left: 1rem;
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .faq {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .faq {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=help.css.map */
