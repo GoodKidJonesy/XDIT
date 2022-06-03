@@ -1,4 +1,31 @@
-/*for all*/
+.color-primary {
+  background-color: #344966;
+}
+
+.color-secondary {
+  background-color: #FFFFFF;
+}
+
+.color-background {
+  background-color: #FFFFFF;
+}
+
+.color-dark {
+  background-color: #040404;
+}
+
+.color-light {
+  background-color: #F0F4EF;
+}
+
+.text-light {
+  color: #F0F4EF;
+}
+
+.text-dark {
+  color: #040404;
+}
+
 body {
   display: block;
   text-align: center;

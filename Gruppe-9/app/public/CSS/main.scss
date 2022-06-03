@@ -39,6 +39,7 @@ $footer-height: 296px;
 
 body {
     min-height: 100vh;
+    background-color: $clr-background;
 }
 
 #breadcrumb {
@@ -60,6 +61,14 @@ body {
     margin: 0 auto;
     padding-bottom: 30px;
     min-height: calc(100vh - #{$header-height});
+    background-color: inherit;
+}
+
+.card {
+    background-color: darken($clr-background, 2%);
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
 }
 
 #footer {

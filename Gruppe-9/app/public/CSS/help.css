@@ -85,6 +85,7 @@
 
 body {
   min-height: 100vh;
+  background-color: #FFFFFF;
 }
 
 #breadcrumb {
@@ -112,6 +113,14 @@ body {
   margin: 0 auto;
   padding-bottom: 30px;
   min-height: calc(100vh - 96px);
+  background-color: inherit;
+}
+
+.card {
+  background-color: #fafafa;
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
 }
 
 #footer {
@@ -201,7 +210,7 @@ body {
 }
 
 .a {
-  background-color: #e2eae0;
+  background-color: #fafafa;
 }
 
 .a,

@@ -19,12 +19,12 @@
     <!-- Personal links -->
     <link rel="stylesheet" href="CSS/card.css">
     <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/colors.css">
 
     <title>XDIT - Kortoplysninger</title>
 </head>
 
 <body class="cardPage">
+
     <header id="header">
         <div id="header-left" class="text-light">
             <a role="button"><i id="back" class="material-icons material-iconsnav md-48"
@@ -70,10 +70,9 @@
             <div class="card color-light">
                 <div class="card-header">
                     <i id="cardicon" class="material-icons">credit_card</i>
-                    <h3 id="betalingtext">Betaling</h1>
+                    <h3 id="betalingtext">Betaling</h3>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title"></h5>
                     <h6 class="card-subtitle mb-2 text-muted text">Indtast dine kortoplysninger</h6>
                     <div id="fornavn">
                         <label class="text">Fornavn</label>
@@ -97,7 +96,7 @@
                         <label class="text">Email adresse</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text material-icons" id="basic-addon1">mail</span>
+                                <span class="input-group-text material-icons">mail</span>
                             </div>
                             <input id="email-input" type="text" class="form-control" placeholder="Email adresse" required>
                         </div>
@@ -106,7 +105,7 @@
                         <label class="text">Kørekortnummer</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text material-icons" id="basic-addon1">directions_car</span>
+                                <span class="input-group-text material-icons">directions_car</span>
                             </div>
                             <input id="korekort-input" type="text" class="form-control" placeholder="kørekortnummer" required>
                         </div>
@@ -123,7 +122,7 @@
                         <label class="text">Kortnummer</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text material-icons" id="basic-addon1">credit_card</span>
+                                <span class="input-group-text material-icons">credit_card</span>
                             </div>
                             <input id="kortnummer-input" type="password" class="form-control" placeholder="Kortnummer" required>
                         </div>
@@ -136,7 +135,7 @@
                                     <label class="text">Udløbs-dato</label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text material-icons" id="basic-addon1">calendar_month</span>
+                                            <span class="input-group-text material-icons">calendar_month</span>
                                         </div>
                                         <input id="udlobsdato-input" type="text" class="form-control" placeholder="Udløbs-dato" required>
                                     </div>
@@ -145,7 +144,7 @@
                                     <label class="text">CVV</label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text material-icons" id="basic-addon1">lock</span>
+                                            <span class="input-group-text material-icons">lock</span>
                                         </div>
                                         <input id="cvv-input" type="text" class="form-control" placeholder="CVV" required>
                                     </div>
@@ -156,7 +155,7 @@
                     <div id="checkbeløb">
                         <div id="checkbox" class="text form-check">
                             <input class="form-check-input" type="checkbox" id="exampleCheck1" required>
-                            <label class="form-check-label" for="exampleCheck1 invalidCheck">Accepter
+                            <label class="form-check-label" for="exampleCheck1">Accepter
                                 købsbetingelserne</label>
                         </div>
                     </div>
@@ -205,7 +204,6 @@
             <div class="modal-content">
                 <div id="overskrift" class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Tak for at køre med os!</h5>
-                    </button>
                 </div>
                 <div id="info" class="modal-body">
                     <p>Du kan finde din bil og afslutte booking på "Aktiv Bil" siden, når du er færdig med at køre.</p>
@@ -214,8 +212,7 @@
             </div>
         </div>
     </div>
+    <script src="scripts/main.js"></script>
 </body>
-
-<script src="scripts/main.js"></script>
 
 </html>

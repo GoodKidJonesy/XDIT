@@ -1,6 +1,4 @@
 @import "./colors.scss";
-@import "./main.scss";
-
 #content-wrap {
     display: flex;
     flex-direction: column;
@@ -28,19 +26,12 @@ button {
     border-color: $clr-dark !important;
 }
 
-
 #header-left {
     margin-right: 48px;
 }
 
-@media (max-width: 600px) {
-    
-}
+@media (max-width: 600px) {}
 
-@media (min-width: 601px) and (max-width: 1000px) {
-    
-}
+@media (min-width: 601px) and (max-width: 1000px) {}
 
-@media (min-width: 1000px) {
-    
-}
+@media (min-width: 1000px) {}
